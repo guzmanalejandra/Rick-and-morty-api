@@ -1,0 +1,4634 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a63f84e30c13654fe917cabfec3f1728 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a63f84e30c13654fe917cabfec3f1728" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a63f84e30c13654fe917cabfec3f1728 = L.map(
+                "map_a63f84e30c13654fe917cabfec3f1728",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_17796429d390a6bb7d8fe1acc360e32d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_17796429d390a6bb7d8fe1acc360e32d.addTo(map_a63f84e30c13654fe917cabfec3f1728);
+        
+    
+            var marker_cluster_e6044d43d9b024d11ead14416a9bd72c = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_e96f930c379b5f4b01c4dcb4e12568e7 = L.marker(
+                [-43.49254199223025, -50.847223879836235],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_d9262d3d154976ad9c1bf26b1566a4b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e96f930c379b5f4b01c4dcb4e12568e7.setIcon(icon_d9262d3d154976ad9c1bf26b1566a4b5);
+        
+    
+        var popup_232d91a174bd4de607d47afacf28c3b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b05fb5a2ad4475349f9141c70f7f46d0 = $(`<div id="html_b05fb5a2ad4475349f9141c70f7f46d0" style="width: 100.0%; height: 100.0%;"><strong>Earth (C-137)</strong><br>Type: Planet<br>Dimension: Dimension C-137<br>Characters: Beth Smith, Bill, Conroy, Cronenberg Rick, Cronenberg Morty, Davin, Eric McMan, Ethan, Evil Beth Clone, Evil Jerry Clone, Evil Summer Clone, Frank Palicky, Harold, Jacob, Jerry Smith, Jessica, Joyce Smith, Leonard Smith, MC Haps, Mr. Goldenfold, Principal Vagina, Ruben, Samantha, Summer Smith, Tammy Guetermann, Tom Randolph, Davin</div>`)[0];
+                popup_232d91a174bd4de607d47afacf28c3b8.setContent(html_b05fb5a2ad4475349f9141c70f7f46d0);
+            
+        
+
+        marker_e96f930c379b5f4b01c4dcb4e12568e7.bindPopup(popup_232d91a174bd4de607d47afacf28c3b8)
+        ;
+
+        
+    
+    
+            var marker_d8ef718ddf0fc3a5fb454b646f05149d = L.marker(
+                [-38.87425748169878, -76.67127277332574],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_bac49007d61266315ea8319f3edfcec5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d8ef718ddf0fc3a5fb454b646f05149d.setIcon(icon_bac49007d61266315ea8319f3edfcec5);
+        
+    
+        var popup_6d3fe7ee81bb19644955ba6f53eb70cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b4156d871442ca001b56ce5a4429653 = $(`<div id="html_9b4156d871442ca001b56ce5a4429653" style="width: 100.0%; height: 100.0%;"><strong>Abadango</strong><br>Type: Cluster<br>Dimension: unknown<br>Characters: Abadango Cluster Princess</div>`)[0];
+                popup_6d3fe7ee81bb19644955ba6f53eb70cc.setContent(html_9b4156d871442ca001b56ce5a4429653);
+            
+        
+
+        marker_d8ef718ddf0fc3a5fb454b646f05149d.bindPopup(popup_6d3fe7ee81bb19644955ba6f53eb70cc)
+        ;
+
+        
+    
+    
+            var marker_19c7f7aede7ad9d00f4e42d391b00cfd = L.marker(
+                [-70.28402908668146, -117.42857076585477],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_087c247924468ddf4762cc67a1fc0044 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_19c7f7aede7ad9d00f4e42d391b00cfd.setIcon(icon_087c247924468ddf4762cc67a1fc0044);
+        
+    
+        var popup_f9e6d7f4ba33188a41807cbbfffe7152 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b6502977a67e133a11a49df5fef99a8 = $(`<div id="html_4b6502977a67e133a11a49df5fef99a8" style="width: 100.0%; height: 100.0%;"><strong>Citadel of Ricks</strong><br>Type: Space station<br>Dimension: unknown<br>Characters: Adjudicator Rick, Alien Morty, Alien Rick, Antenna Morty, Aqua Morty, Aqua Rick, Artist Morty, Big Head Morty, Big Morty, Body Guard Morty, Black Rick, Blue Shirt Morty, Bootleg Portal Chemist Rick, Campaign Manager Morty, Commander Rick, Cool Rick, Cop Morty, Cop Rick, Cowboy Morty, Cowboy Rick, Cyclops Morty, Cyclops Rick, Dipper and Mabel Mortys, Evil Morty, Evil Rick, Fat Morty, Garment District Rick, Glasses Morty, Hammerhead Morty, Insurance Rick, Investigator Rick, Juggling Rick, Lawyer Morty, Lizard Morty, Long Sleeved Morty, Mega Fruit Farmer Rick, Morty Mart Manager Morty, Morty Rick, Mortytown Loco, Plumber Rick, Regional Manager Rick, Reverse Rick Outrage, Rick D. Sanchez III, Rick Guilt Rick, Rick Prime, Rick D-99, Rick D716, Rick D716-B, Rick D716-C, Rick J-22, Riq IV, Robot Morty, Robot Rick, Simple Rick, Slick Morty, Slow Rick, Solicitor Rick, Teacher Rick, Tortured Morty, Trunk Morty, Wall Crawling Rick, Yellow Shirt Rick, Bearded Morty, Communication's Responsible Rick, Teleportation's Responsible Rick, SEAL Team Rick, SEAL Team Rick, SEAL Team Rick, SEAL Team Rick, Baby Rick, Bartender Morty, Dancer Cowboy Morty, Dancer Morty, Flower Morty, Hairdresser Rick, Journalist Rick, Private Sector Rick, Purple Morty, Retired General Rick, Secret Service Rick, Steve Jobs Rick, Sheik Rick, Modern Rick, Tan Rick, Visor Rick, Colonial Rick, P-Coat Rick, Morty Smith, Rick Sanchez, 7+7 Years Old Morty, 26 Years Old Morty, 40 Years Old Morty, Andy, Baby Mouse Skin Morty, Metaphor for Capitalism, Stan Lee Rick, Re-Build-a-Morty Morty, Deformed Morty, Redhead Rick, Redhead Morty, Long Hair Rick</div>`)[0];
+                popup_f9e6d7f4ba33188a41807cbbfffe7152.setContent(html_4b6502977a67e133a11a49df5fef99a8);
+            
+        
+
+        marker_19c7f7aede7ad9d00f4e42d391b00cfd.bindPopup(popup_f9e6d7f4ba33188a41807cbbfffe7152)
+        ;
+
+        
+    
+    
+            var marker_28cf23af22dea8f788d1519e6301fdfb = L.marker(
+                [-83.35762054315389, 119.52884611662324],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_589b83c19023b6380379a69a33299491 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_28cf23af22dea8f788d1519e6301fdfb.setIcon(icon_589b83c19023b6380379a69a33299491);
+        
+    
+        var popup_a68adabcfcff5744bc81cb18ac2de11f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79e19741f621ca342f653d34d5299242 = $(`<div id="html_79e19741f621ca342f653d34d5299242" style="width: 100.0%; height: 100.0%;"><strong>Worldender's lair</strong><br>Type: Planet<br>Dimension: unknown<br>Characters: Alan Rails, Crocubot, Logic, Million Ants, Supernova, Traflorkian, Vance Maximus, Worldender, Greebybobe</div>`)[0];
+                popup_a68adabcfcff5744bc81cb18ac2de11f.setContent(html_79e19741f621ca342f653d34d5299242);
+            
+        
+
+        marker_28cf23af22dea8f788d1519e6301fdfb.bindPopup(popup_a68adabcfcff5744bc81cb18ac2de11f)
+        ;
+
+        
+    
+    
+            var marker_2a767a199e2e3ac621f204121ee57b72 = L.marker(
+                [-13.434324222498645, -168.38558524951043],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_28ec854568bb8c649aa983f1d57f569a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2a767a199e2e3ac621f204121ee57b72.setIcon(icon_28ec854568bb8c649aa983f1d57f569a);
+        
+    
+        var popup_97e45cfe6760fc689bb1d8ef5fa8c873 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_99e0cf96639e5e24f561e1b5430d3858 = $(`<div id="html_99e0cf96639e5e24f561e1b5430d3858" style="width: 100.0%; height: 100.0%;"><strong>Anatomy Park</strong><br>Type: Microverse<br>Dimension: Dimension C-137<br>Characters: Alexander, Annie, Tuberculosis, Gonorrhea, Hepatitis A, Hepatitis C, Bubonic Plague, E. Coli, Dr. Xenon Bloom, Poncho, Roger</div>`)[0];
+                popup_97e45cfe6760fc689bb1d8ef5fa8c873.setContent(html_99e0cf96639e5e24f561e1b5430d3858);
+            
+        
+
+        marker_2a767a199e2e3ac621f204121ee57b72.bindPopup(popup_97e45cfe6760fc689bb1d8ef5fa8c873)
+        ;
+
+        
+    
+    
+            var marker_44d4fac1428843390038388e500011b6 = L.marker(
+                [32.660066738829855, 43.12812421029602],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_aedeb58c7d208b117be884e5dced0739 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_44d4fac1428843390038388e500011b6.setIcon(icon_aedeb58c7d208b117be884e5dced0739);
+        
+    
+        var popup_c9cbb196e0e8366eedf6b4de7570f7ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_59247c87a12dece6775f9c7fde18727f = $(`<div id="html_59247c87a12dece6775f9c7fde18727f" style="width: 100.0%; height: 100.0%;"><strong>Interdimensional Cable</strong><br>Type: TV<br>Dimension: unknown<br>Characters: Ants in my Eyes Johnson, Attila Starwar, Baby Legs, Benjamin, Blamph, Blue Diplomat, Bobby Moynihan, Eyehole Man, Fleeb, Fulgora, Garmanarnar, Gazorpazorpfield, Glenn, Hole in the Wall Where the Men Can See it All, Jan-Michael Vincent, Jon, Little Dipper, Loggins, Man Painted Silver Who Makes Robot Noises, Michael Denny and the Denny Singers, Michael Jenkins, Michael McLick, Michael Thompson, Mrs. Sullivan, Octopus Man, Phillip Jacobs, Pichael Thompson, Piece of Toast, Randy Dicknose, Real Fake Doors Salesman, Regular Legs, Shlaammi, Shmlamantha Shmlicelli, Shmlangela Shmlobinson-Shmlower, Shmlona Shmlobinson, Shmlonathan Shmlower, Shmlony Shmlicelli, Stealy, Three Unknown Things, Tophat Jones, Trunk Man, Two Guys with Handlebar Mustaches, Unmuscular Michael, Corn detective, Spiderweb teddy bear, Regular Tyrion Lannister, Quick Mystery Presenter, Mr. Sneezy, Two Brothers, Alien Mexican Armada, Giant Cat Monster, Old Women, Trunkphobic guy, Pro trunk people marriage guy, Muscular Mannie, Baby Legs Chief, Mrs. Sullivan's Boyfriend, Funny Songs Presenter, Tax Attorney, Butthole Ice Cream Guy, Dracula, When Wolf</div>`)[0];
+                popup_c9cbb196e0e8366eedf6b4de7570f7ac.setContent(html_59247c87a12dece6775f9c7fde18727f);
+            
+        
+
+        marker_44d4fac1428843390038388e500011b6.bindPopup(popup_c9cbb196e0e8366eedf6b4de7570f7ac)
+        ;
+
+        
+    
+    
+            var marker_88f31a25f882fba2da96a146e1ecbe29 = L.marker(
+                [-20.95366562744009, -113.83367273840436],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_05aa0cd6bde241212ac71881f5e7b0f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_88f31a25f882fba2da96a146e1ecbe29.setIcon(icon_05aa0cd6bde241212ac71881f5e7b0f3);
+        
+    
+        var popup_41edd12f325d6555a582d71496177eb6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a02de88a9ab67bcb2f56cd6f4491568b = $(`<div id="html_a02de88a9ab67bcb2f56cd6f4491568b" style="width: 100.0%; height: 100.0%;"><strong>Immortality Field Resort</strong><br>Type: Resort<br>Dimension: unknown<br>Characters: Arcade Alien, Lisa, Shnoopy Bloopers</div>`)[0];
+                popup_41edd12f325d6555a582d71496177eb6.setContent(html_a02de88a9ab67bcb2f56cd6f4491568b);
+            
+        
+
+        marker_88f31a25f882fba2da96a146e1ecbe29.bindPopup(popup_41edd12f325d6555a582d71496177eb6)
+        ;
+
+        
+    
+    
+            var marker_228b01403aa9ad6b37f37d770f215138 = L.marker(
+                [54.65509113504859, 54.772349716377335],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_f0709afcf8c4d694ce69a5d7fbaf8a9e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_228b01403aa9ad6b37f37d770f215138.setIcon(icon_f0709afcf8c4d694ce69a5d7fbaf8a9e);
+        
+    
+        var popup_6c55e74a0ba71c77bc12a8b6a998ad09 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e873e2d6bc04c8d2b9001808fd838e1 = $(`<div id="html_9e873e2d6bc04c8d2b9001808fd838e1" style="width: 100.0%; height: 100.0%;"><strong>Post-Apocalyptic Earth</strong><br>Type: Planet<br>Dimension: Post-Apocalyptic Dimension<br>Characters: Armothy, Blue Footprint Guy, Colossus, Eli, Eli's Girlfriend, Genital Washer, Hemorrhage, Mohawk Guy, Slaveowner, Taint Washer</div>`)[0];
+                popup_6c55e74a0ba71c77bc12a8b6a998ad09.setContent(html_9e873e2d6bc04c8d2b9001808fd838e1);
+            
+        
+
+        marker_228b01403aa9ad6b37f37d770f215138.bindPopup(popup_6c55e74a0ba71c77bc12a8b6a998ad09)
+        ;
+
+        
+    
+    
+            var marker_46c009638735eaa75b974a7a75c80ca9 = L.marker(
+                [-27.24413564369066, -170.0012272227363],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_c841d5cbbdd63de2e2d94099921fcc47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_46c009638735eaa75b974a7a75c80ca9.setIcon(icon_c841d5cbbdd63de2e2d94099921fcc47);
+        
+    
+        var popup_a1d4d31be0422415deedb066d806f6f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d44ae6562f9c2542abe271569437834 = $(`<div id="html_6d44ae6562f9c2542abe271569437834" style="width: 100.0%; height: 100.0%;"><strong>Purge Planet</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: Arthricia, General Store Owner, Lighthouse Keeper, Purge Planet Ruler</div>`)[0];
+                popup_a1d4d31be0422415deedb066d806f6f0.setContent(html_6d44ae6562f9c2542abe271569437834);
+            
+        
+
+        marker_46c009638735eaa75b974a7a75c80ca9.bindPopup(popup_a1d4d31be0422415deedb066d806f6f0)
+        ;
+
+        
+    
+    
+            var marker_333a9dcc07df112a0aced029d0299c54 = L.marker(
+                [-84.68576314966695, -132.4699910274109],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_58c3a74dd4a140715f1e4c7b0a81b812 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_333a9dcc07df112a0aced029d0299c54.setIcon(icon_58c3a74dd4a140715f1e4c7b0a81b812);
+        
+    
+        var popup_bc8b917ce9bae7cb31329f328eec4364 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5f0ca4df1b7d867edef150e9c3f332e = $(`<div id="html_d5f0ca4df1b7d867edef150e9c3f332e" style="width: 100.0%; height: 100.0%;"><strong>Venzenulon 7</strong><br>Type: Planet<br>Dimension: unknown<br>Characters: Beebo</div>`)[0];
+                popup_bc8b917ce9bae7cb31329f328eec4364.setContent(html_d5f0ca4df1b7d867edef150e9c3f332e);
+            
+        
+
+        marker_333a9dcc07df112a0aced029d0299c54.bindPopup(popup_bc8b917ce9bae7cb31329f328eec4364)
+        ;
+
+        
+    
+    
+            var marker_5ad74c25ea097b9ffb6bccd75968241c = L.marker(
+                [27.875719773544603, 89.4943773720147],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_bd941b6cd5539bf4813330170bfdf1dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5ad74c25ea097b9ffb6bccd75968241c.setIcon(icon_bd941b6cd5539bf4813330170bfdf1dd);
+        
+    
+        var popup_3bfa119cb3b1f5deafdac08cd295ce54 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9991a45de4d9462731db185459f59b64 = $(`<div id="html_9991a45de4d9462731db185459f59b64" style="width: 100.0%; height: 100.0%;"><strong>Bepis 9</strong><br>Type: Planet<br>Dimension: unknown<br>Characters: Bepisian</div>`)[0];
+                popup_3bfa119cb3b1f5deafdac08cd295ce54.setContent(html_9991a45de4d9462731db185459f59b64);
+            
+        
+
+        marker_5ad74c25ea097b9ffb6bccd75968241c.bindPopup(popup_3bfa119cb3b1f5deafdac08cd295ce54)
+        ;
+
+        
+    
+    
+            var marker_6982e70afb9a548ad098308a56e35bb9 = L.marker(
+                [82.26921106346069, -115.36740338597906],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_cd9bb6bef84b4bde56d49e1e1b1fbbcb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6982e70afb9a548ad098308a56e35bb9.setIcon(icon_cd9bb6bef84b4bde56d49e1e1b1fbbcb);
+        
+    
+        var popup_370896e960aa512d3b511028ae70b7d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_80e31ba87dad556a8f042dc80f6e451e = $(`<div id="html_80e31ba87dad556a8f042dc80f6e451e" style="width: 100.0%; height: 100.0%;"><strong>Cronenberg Earth</strong><br>Type: Planet<br>Dimension: Cronenberg Dimension<br>Characters: None</div>`)[0];
+                popup_370896e960aa512d3b511028ae70b7d7.setContent(html_80e31ba87dad556a8f042dc80f6e451e);
+            
+        
+
+        marker_6982e70afb9a548ad098308a56e35bb9.bindPopup(popup_370896e960aa512d3b511028ae70b7d7)
+        ;
+
+        
+    
+    
+            var marker_818d74d1e12eaa1d5383f9aedc92216a = L.marker(
+                [-65.29264679687029, 33.57200008599315],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_69cb026b97cc026422ab3dd15061b4f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_818d74d1e12eaa1d5383f9aedc92216a.setIcon(icon_69cb026b97cc026422ab3dd15061b4f0);
+        
+    
+        var popup_3e658cfaaa68bc3424eea776115b6ebb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3107683f49b443d7cc60b96066f55bc9 = $(`<div id="html_3107683f49b443d7cc60b96066f55bc9" style="width: 100.0%; height: 100.0%;"><strong>Nuptia 4</strong><br>Type: Planet<br>Dimension: unknown<br>Characters: Beth's Mytholog, Boobloosian, Gar Gloonch, Gar's Mytholog, Glexo Slim Slom, Goddess Beth, Ideal Jerry, Jerry's Mytholog, Self-Congratulatory Jerry, Zarbadar Gloonch, Zarbadar's Mytholog</div>`)[0];
+                popup_3e658cfaaa68bc3424eea776115b6ebb.setContent(html_3107683f49b443d7cc60b96066f55bc9);
+            
+        
+
+        marker_818d74d1e12eaa1d5383f9aedc92216a.bindPopup(popup_3e658cfaaa68bc3424eea776115b6ebb)
+        ;
+
+        
+    
+    
+            var marker_6c0a8cf24bc3cad94809381c21c6070b = L.marker(
+                [-62.210220943085965, 23.585968120680462],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_1b21a9527cae9d396d8bf35a5e9dafe2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6c0a8cf24bc3cad94809381c21c6070b.setIcon(icon_1b21a9527cae9d396d8bf35a5e9dafe2);
+        
+    
+        var popup_fca0b5b4a9d6f9581d7dd2ac7a7871ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d6da82ea283ce62f4ef250a179c3e265 = $(`<div id="html_d6da82ea283ce62f4ef250a179c3e265" style="width: 100.0%; height: 100.0%;"><strong>Giant's Town</strong><br>Type: Fantasy town<br>Dimension: Fantasy Dimension<br>Characters: Dale, Tiny-persons advocacy group lawyer, Giant Judge</div>`)[0];
+                popup_fca0b5b4a9d6f9581d7dd2ac7a7871ab.setContent(html_d6da82ea283ce62f4ef250a179c3e265);
+            
+        
+
+        marker_6c0a8cf24bc3cad94809381c21c6070b.bindPopup(popup_fca0b5b4a9d6f9581d7dd2ac7a7871ab)
+        ;
+
+        
+    
+    
+            var marker_ba09cd349c7a3b526485834fe4140940 = L.marker(
+                [49.162745329925, -72.67395147869995],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_b7c18ca78fb2fcb0414155bc63f210f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ba09cd349c7a3b526485834fe4140940.setIcon(icon_b7c18ca78fb2fcb0414155bc63f210f2);
+        
+    
+        var popup_af339aa69876ae445f983ab6bb520a46 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d3747f2d5b277fba6784ba72f90f3d1 = $(`<div id="html_0d3747f2d5b277fba6784ba72f90f3d1" style="width: 100.0%; height: 100.0%;"><strong>Bird World</strong><br>Type: Planet<br>Dimension: unknown<br>Characters: None</div>`)[0];
+                popup_af339aa69876ae445f983ab6bb520a46.setContent(html_0d3747f2d5b277fba6784ba72f90f3d1);
+            
+        
+
+        marker_ba09cd349c7a3b526485834fe4140940.bindPopup(popup_af339aa69876ae445f983ab6bb520a46)
+        ;
+
+        
+    
+    
+            var marker_0b05bb7098a014bc9d93bc7836637819 = L.marker(
+                [47.34195107308986, -83.93140809493421],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_305ee55a496200cc46ad6ef35e097549 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0b05bb7098a014bc9d93bc7836637819.setIcon(icon_305ee55a496200cc46ad6ef35e097549);
+        
+    
+        var popup_e4efc9e3d6c7cb4ddd3e8f54202e5538 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_792bffee5faf20e149f0926a7ed7105a = $(`<div id="html_792bffee5faf20e149f0926a7ed7105a" style="width: 100.0%; height: 100.0%;"><strong>St. Gloopy Noops Hospital</strong><br>Type: Space station<br>Dimension: unknown<br>Characters: Dr. Glip-Glop, Pibbles Bodyguard, Shrimply Pibbles, Yaarb, Yellow Headed Doctor, Arbolian Mentirososian, St. Gloopy Noops Nurse, Nano Doctor, Traflorkian Journalist</div>`)[0];
+                popup_e4efc9e3d6c7cb4ddd3e8f54202e5538.setContent(html_792bffee5faf20e149f0926a7ed7105a);
+            
+        
+
+        marker_0b05bb7098a014bc9d93bc7836637819.bindPopup(popup_e4efc9e3d6c7cb4ddd3e8f54202e5538)
+        ;
+
+        
+    
+    
+            var marker_f3c0eafb6c284cab4e065734b706b2e6 = L.marker(
+                [46.684212353456786, -98.34686391120665],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_44ffaa041d419103a6e782af9fcfe440 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f3c0eafb6c284cab4e065734b706b2e6.setIcon(icon_44ffaa041d419103a6e782af9fcfe440);
+        
+    
+        var popup_1fd698044c3fff03f545de620230f7a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_541ddc72b48f6feba90be7369bc92c74 = $(`<div id="html_541ddc72b48f6feba90be7369bc92c74" style="width: 100.0%; height: 100.0%;"><strong>Earth (5-126)</strong><br>Type: Planet<br>Dimension: Dimension 5-126<br>Characters: None</div>`)[0];
+                popup_1fd698044c3fff03f545de620230f7a7.setContent(html_541ddc72b48f6feba90be7369bc92c74);
+            
+        
+
+        marker_f3c0eafb6c284cab4e065734b706b2e6.bindPopup(popup_1fd698044c3fff03f545de620230f7a7)
+        ;
+
+        
+    
+    
+            var marker_42726a36def625cef432af0579b030c9 = L.marker(
+                [24.57243984217095, 133.19369047702253],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_e2699c7c70072a30adc3e716b845a249 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_42726a36def625cef432af0579b030c9.setIcon(icon_e2699c7c70072a30adc3e716b845a249);
+        
+    
+        var popup_153395bbc9988f1e3d778a643e687e9c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7cac24253c394e349f7927aaffe55c35 = $(`<div id="html_7cac24253c394e349f7927aaffe55c35" style="width: 100.0%; height: 100.0%;"><strong>Mr. Goldenfold's dream</strong><br>Type: Dream<br>Dimension: Dimension C-137<br>Characters: Centaur, Creepy Little Girl, Melissa, Mrs. Pancakes, Scary Brandon, Scary Glenn, Scary Terry, Scary Teacher</div>`)[0];
+                popup_153395bbc9988f1e3d778a643e687e9c.setContent(html_7cac24253c394e349f7927aaffe55c35);
+            
+        
+
+        marker_42726a36def625cef432af0579b030c9.bindPopup(popup_153395bbc9988f1e3d778a643e687e9c)
+        ;
+
+        
+    
+    
+            var marker_61f943dc1185b175addf6b57866f3771 = L.marker(
+                [13.632449131172564, 78.97938837844777],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_814af26f6cb95ed1e0f9f1a538d47b70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_61f943dc1185b175addf6b57866f3771.setIcon(icon_814af26f6cb95ed1e0f9f1a538d47b70);
+        
+    
+        var popup_fc64da43d34f34d68c03925b40d7a52c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e20187d40a59a26eec0db877006326de = $(`<div id="html_e20187d40a59a26eec0db877006326de" style="width: 100.0%; height: 100.0%;"><strong>Gromflom Prime</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: None</div>`)[0];
+                popup_fc64da43d34f34d68c03925b40d7a52c.setContent(html_e20187d40a59a26eec0db877006326de);
+            
+        
+
+        marker_61f943dc1185b175addf6b57866f3771.bindPopup(popup_fc64da43d34f34d68c03925b40d7a52c)
+        ;
+
+        
+    
+    
+            var marker_29a481dc74a241bed5632c1bdeddc422 = L.marker(
+                [37.127104662797564, 108.58886351361951],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_e2813b7a0a676b54962fab3c965d4b48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_29a481dc74a241bed5632c1bdeddc422.setIcon(icon_e2813b7a0a676b54962fab3c965d4b48);
+        
+    
+        var popup_cfd148cdbf00ff4f337fe4459db02190 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d46e484d499e33a6b2d95f7f231430a1 = $(`<div id="html_d46e484d499e33a6b2d95f7f231430a1" style="width: 100.0%; height: 100.0%;"><strong>Earth (Replacement Dimension)</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: Summer Smith, Beth Smith, Jerry Smith, Agency Director, Albert Einstein, Alien Googah, Amish Cyborg, Baby Wizard, Bearded Lady, Blim Blam, Brad, Brad Anderson, Chris, Coach Feratu (Balik Alistane), Cousin Nicky, Cynthia, Doofus Rick, Dr. Wong, Duck With Muscles, Eric Stoltz Mask Morty, Ethan, Father Bob, Frankenstein's Monster, Gene, General Nathan, Ghost in a Jar, Gobo, Gordon Lunas, Gwendolyn, Hamurai, Invisi-trooper, Izzy, Jacqueline, Jaguar, Jamey, Jessica, Jessica's Friend, Jim, Joseph Eli Lipkip, Katarina, Keara, Lucy, Mechanical Morty, Mechanical Rick, Mechanical Summer, Mitch, Morty Jr., Morty K-22, Morty Smith, Mr. Beauregard, Mr. Benson, Mr. Goldenfold, Mr. Marklovitz, Mr. Needful, Mr. Poopybutthole, Mrs. Lipkip, Mrs. Refrigerator, Nancy, Orthodox Jew, Pencilvester, Photography Raptor, Pickle Rick, Principal Vagina, Rat Boss, Reverse Giraffe, Rick K-22, Rick Sanchez, Sleepy Gary, Slippery Stair, Slow Mobius, Stacy, Steve, Taddy Mason, Terry, President Curtis, Tinkles, Tiny Rick, Toby Matthews, Tommy's Clone, Toxic Morty, Toxic Rick, Trandor, Tricia Lange, Vampire Master, Voltematron, Zick Zack, Uncle Steve, Morty Jr's interviewer, Guy from The Bachelor, Trunkphobic suspenders guy, Synthetic Laser Eels, Pripudlian, Michael, Michael's Lawyer, Veterinary, Veterinary Nurse, Simon, Vampire Master's Assistant, Morphizer-XE Customer Support, Morphizer-XE Customer Support, Morphizer-XE Customer Support, Little Voltron, Varrix, Secretary of the Interior, Hologram Rick, Bully, Anchorman, Anchorwoman, Morty’s Lawyer, Judge, Public Opinion Judge, Wasp Rick, Wasp Rick’s Clone, Boglin, Kirkland Brand Mr. Meeseeks, Danny Publitz, Tony's Dad, Jeff, Josiah, Maggie, Priest Witherspoon, Richard, Running Bird, Secretary at Tony's, Netflix Executive, Balthromaw, Talking Cat, Chachi, Snake Resistance Robot, Bar Customer, Bartender, PC Basketball Player, Pet Shop Employee, High Pilot, High Pilot, Phoenixperson, Defiance Beth, Mr. Nimbus, Adam, Mr. Nimbus Secretary, Mr. Nimbus' Squid, Scarecrow Rick, Scarecrow Summer, Scarecrow Jerry, Scarecrow Morty, Scarecrow Beth, Glockenspiel Jerry, Glockenspiel Beth, Glockenspiel Rick, Glockenspiel Summer, Glockenspiel Morty, Wicker Beth, Wicker Rick, Wicker Morty, Wicker Summer, Metal Rick, Gun Brain Rick, Mr. Always Wants to be Hunted, Squid Costume Beth, Squid Costume Jerry, Squid Costume Morty, Squid Costume Rick, Squid Costume Summer, Steve, Too Cute to Murder Beth, Too Cute to Murder Rick, Too Cute to Murder Jerry, Too Cute to Murder Morty, Too Cute to Murder Summer, Planetina, Diesel Weasel, Eddie, Xing Ho, Air Tina-Teer, Water Tina-Teer, Planetina Buyer, Tony Galopagus, Sticky, Professor Shabooboo, Sperm Queen, CHUD King, Princess Ponietta, Blazen, Kathy Ireland, Amazing Johnathan, Foal Sanchez, Cirque du Soleil Zumanity Member, Cirque du Soleil Zumanity Member, Cirque du Soleil Zumanity Member, Cirque du Soleil Zumanity Member, Cirque du Soleil Zumanity Member, Bruce Chutback, Space Cruiser, Coop, Dwayne, Franklin D. Roosevelt, President's General, Giant Assassin Hidden in the Statue of Liberty, Turkey Morty, Turkey Rick, Turkey President Curtis, Martínez, Marvin, Jackey, Native Alien, Pilgrim Alien, President Turkey, Mary-Lou, Big Fat rick, Hothead Rick, Ricardo Montoya, Wrap-it-up Little Rick, Yo-yo Rick, Voiceoverian, Voiceoverian, Gotron Pilot, Gotron Pilot, Gotron Pilot, Rick's Garage, Birdperson & Tammy's Child, Mr. Cookie President, Nick, Harold (Garbage Goober), Harold's Wife, Lil B, Samansky, Super Turkey, Crow Horse, Gotron, Butter Robot</div>`)[0];
+                popup_cfd148cdbf00ff4f337fe4459db02190.setContent(html_d46e484d499e33a6b2d95f7f231430a1);
+            
+        
+
+        marker_29a481dc74a241bed5632c1bdeddc422.bindPopup(popup_cfd148cdbf00ff4f337fe4459db02190)
+        ;
+
+        
+    
+    
+            var marker_f2295185f42ffaff1bd9e140d75558fd = L.marker(
+                [-34.65033770669935, 176.50634854227707],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_837c61aa4fbf1f7178410f20338f7bc5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f2295185f42ffaff1bd9e140d75558fd.setIcon(icon_837c61aa4fbf1f7178410f20338f7bc5);
+        
+    
+        var popup_5a92376a6deefaa996b6122c21f4abe1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9664d484c63d5041f5c98d9120a8fd70 = $(`<div id="html_9664d484c63d5041f5c98d9120a8fd70" style="width: 100.0%; height: 100.0%;"><strong>Testicle Monster Dimension</strong><br>Type: Dimension<br>Dimension: Testicle Monster Dimension<br>Characters: Abradolf Lincler, Giant Testicle Monster</div>`)[0];
+                popup_5a92376a6deefaa996b6122c21f4abe1.setContent(html_9664d484c63d5041f5c98d9120a8fd70);
+            
+        
+
+        marker_f2295185f42ffaff1bd9e140d75558fd.bindPopup(popup_5a92376a6deefaa996b6122c21f4abe1)
+        ;
+
+        
+    
+    
+            var marker_4002490b6b4bd734c5964b713020c729 = L.marker(
+                [-43.06079987016916, 158.34850321814918],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_f49f0c1348dff85235732e444d490861 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4002490b6b4bd734c5964b713020c729.setIcon(icon_f49f0c1348dff85235732e444d490861);
+        
+    
+        var popup_4ef018a56ba97f00f638cfbd88d0c660 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_717ab3cd93e1603a648226a162312aa9 = $(`<div id="html_717ab3cd93e1603a648226a162312aa9" style="width: 100.0%; height: 100.0%;"><strong>Signus 5 Expanse</strong><br>Type: unknown<br>Dimension: Cromulon Dimension<br>Characters: Armagheadon, Scrotian</div>`)[0];
+                popup_4ef018a56ba97f00f638cfbd88d0c660.setContent(html_717ab3cd93e1603a648226a162312aa9);
+            
+        
+
+        marker_4002490b6b4bd734c5964b713020c729.bindPopup(popup_4ef018a56ba97f00f638cfbd88d0c660)
+        ;
+
+        
+    
+    
+            var marker_4d09d5c853ed275654e268708aa8372e = L.marker(
+                [-12.385554858469234, 80.24958769182109],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_abcd86f5ef06bfc0d0bd8954653bf9f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4d09d5c853ed275654e268708aa8372e.setIcon(icon_abcd86f5ef06bfc0d0bd8954653bf9f2);
+        
+    
+        var popup_adab2c3dd57c75ad24fb1a892c556161 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_efc6b57f2945a7ae991905a2f35cde7d = $(`<div id="html_efc6b57f2945a7ae991905a2f35cde7d" style="width: 100.0%; height: 100.0%;"><strong>Earth (C-500A)</strong><br>Type: Planet<br>Dimension: Dimension C-500A<br>Characters: Beth Sanchez, David Letterman, Celebrity Jerry, Johnny Depp, Kristen Stewart</div>`)[0];
+                popup_adab2c3dd57c75ad24fb1a892c556161.setContent(html_efc6b57f2945a7ae991905a2f35cde7d);
+            
+        
+
+        marker_4d09d5c853ed275654e268708aa8372e.bindPopup(popup_adab2c3dd57c75ad24fb1a892c556161)
+        ;
+
+        
+    
+    
+            var marker_238e6066a41d7e5ea07e93864729b1f5 = L.marker(
+                [-49.61762542974498, -132.22850097221138],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_08f4656eabf4ce5db7abf04a68c82b6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_238e6066a41d7e5ea07e93864729b1f5.setIcon(icon_08f4656eabf4ce5db7abf04a68c82b6a);
+        
+    
+        var popup_2d8e8dba9aa757b9f1f5a8aa5a53f1c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6cc773a14d276bf99147428a76ba1d14 = $(`<div id="html_6cc773a14d276bf99147428a76ba1d14" style="width: 100.0%; height: 100.0%;"><strong>Rick's Battery Microverse</strong><br>Type: Microverse<br>Dimension: Replacement Dimension<br>Characters: Chris, Zeep Xanflorp</div>`)[0];
+                popup_2d8e8dba9aa757b9f1f5a8aa5a53f1c6.setContent(html_6cc773a14d276bf99147428a76ba1d14);
+            
+        
+
+        marker_238e6066a41d7e5ea07e93864729b1f5.bindPopup(popup_2d8e8dba9aa757b9f1f5a8aa5a53f1c6)
+        ;
+
+        
+    
+    
+            var marker_4a9d1fdfc56302e4f21ae54d7cf602e1 = L.marker(
+                [-69.57248918122757, -129.6054385134705],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_a1317669fa89b05d75eda946cc581f28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4a9d1fdfc56302e4f21ae54d7cf602e1.setIcon(icon_a1317669fa89b05d75eda946cc581f28);
+        
+    
+        var popup_e56788c6233bd1dab3ee3da39e130b2d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_62a6eddbff27a1be29d4a98413c09ce8 = $(`<div id="html_62a6eddbff27a1be29d4a98413c09ce8" style="width: 100.0%; height: 100.0%;"><strong>The Menagerie</strong><br>Type: Menagerie<br>Dimension: unknown<br>Characters: Collector, Chang, Dr. Eleanor Arroway</div>`)[0];
+                popup_e56788c6233bd1dab3ee3da39e130b2d.setContent(html_62a6eddbff27a1be29d4a98413c09ce8);
+            
+        
+
+        marker_4a9d1fdfc56302e4f21ae54d7cf602e1.bindPopup(popup_e56788c6233bd1dab3ee3da39e130b2d)
+        ;
+
+        
+    
+    
+            var marker_38f83ae5cec33ea6270ab8de783b809f = L.marker(
+                [-39.12555589493021, -137.66030112770406],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_ea0e9fe98dda738bc7f254b8b05b5b9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_38f83ae5cec33ea6270ab8de783b809f.setIcon(icon_ea0e9fe98dda738bc7f254b8b05b5b9a);
+        
+    
+        var popup_688789eddd26ab5056d38851d6439a9a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_553b8336baafa68389eaba11e4df4696 = $(`<div id="html_553b8336baafa68389eaba11e4df4696" style="width: 100.0%; height: 100.0%;"><strong>Earth (K-83)</strong><br>Type: Planet<br>Dimension: Dimension K-83<br>Characters: None</div>`)[0];
+                popup_688789eddd26ab5056d38851d6439a9a.setContent(html_553b8336baafa68389eaba11e4df4696);
+            
+        
+
+        marker_38f83ae5cec33ea6270ab8de783b809f.bindPopup(popup_688789eddd26ab5056d38851d6439a9a)
+        ;
+
+        
+    
+    
+            var marker_b32a8cce79611d7996a9de97e6e46afb = L.marker(
+                [59.12446871526706, 70.70495535862179],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_4e0582b91630476343d17267b7f7e29b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b32a8cce79611d7996a9de97e6e46afb.setIcon(icon_4e0582b91630476343d17267b7f7e29b);
+        
+    
+        var popup_81c653e2fb9b31684c794bfa1792038f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a6f51206367f44e0716164f36b92283e = $(`<div id="html_a6f51206367f44e0716164f36b92283e" style="width: 100.0%; height: 100.0%;"><strong>Hideout Planet</strong><br>Type: Planet<br>Dimension: unknown<br>Characters: Crab Spider, Cult Leader Morty</div>`)[0];
+                popup_81c653e2fb9b31684c794bfa1792038f.setContent(html_a6f51206367f44e0716164f36b92283e);
+            
+        
+
+        marker_b32a8cce79611d7996a9de97e6e46afb.bindPopup(popup_81c653e2fb9b31684c794bfa1792038f)
+        ;
+
+        
+    
+    
+            var marker_e0dd537e564316dc0bfacf92714f903d = L.marker(
+                [-66.68523983312362, -102.00343732393249],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_1100d2e81e0cad3e521549546eb5730d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e0dd537e564316dc0bfacf92714f903d.setIcon(icon_1100d2e81e0cad3e521549546eb5730d);
+        
+    
+        var popup_16a63c8187147d1eff205d3d9646cde4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4af5d62c0f0f367a40141e6e80e1d133 = $(`<div id="html_4af5d62c0f0f367a40141e6e80e1d133" style="width: 100.0%; height: 100.0%;"><strong>Unity's Planet</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: Daron Jefferson, Karen Entity, Ron Benson, Steven Phillips, Todd Crystal, Unity</div>`)[0];
+                popup_16a63c8187147d1eff205d3d9646cde4.setContent(html_4af5d62c0f0f367a40141e6e80e1d133);
+            
+        
+
+        marker_e0dd537e564316dc0bfacf92714f903d.bindPopup(popup_16a63c8187147d1eff205d3d9646cde4)
+        ;
+
+        
+    
+    
+            var marker_3ef0e6874bbfb6d43ff51d97eee510cc = L.marker(
+                [-32.207863472050086, 85.30991561802574],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_348781f22341c575a77657cb130f0f00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3ef0e6874bbfb6d43ff51d97eee510cc.setIcon(icon_348781f22341c575a77657cb130f0f00);
+        
+    
+        var popup_fd60ba627e0ced2abaca7f26b54fda7a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb4837e7985347b1a6a4ecd4352234bd = $(`<div id="html_fb4837e7985347b1a6a4ecd4352234bd" style="width: 100.0%; height: 100.0%;"><strong>Dorian 5</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: Diablo Verde, Doom-Nomitron, Lady Katana</div>`)[0];
+                popup_fd60ba627e0ced2abaca7f26b54fda7a.setContent(html_fb4837e7985347b1a6a4ecd4352234bd);
+            
+        
+
+        marker_3ef0e6874bbfb6d43ff51d97eee510cc.bindPopup(popup_fd60ba627e0ced2abaca7f26b54fda7a)
+        ;
+
+        
+    
+    
+            var marker_3dbca13c1a0c5bb514db8de0fed65939 = L.marker(
+                [-48.37430921452653, -109.30372567703506],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_61e2e9b45cffc9f9c71ded89089ae4fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3dbca13c1a0c5bb514db8de0fed65939.setIcon(icon_61e2e9b45cffc9f9c71ded89089ae4fb);
+        
+    
+        var popup_52bca930a47ae3868a5fcbcbdb33f37b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a183adb1344ccf787ad6c53c04256b0 = $(`<div id="html_2a183adb1344ccf787ad6c53c04256b0" style="width: 100.0%; height: 100.0%;"><strong>Earth (Unknown dimension)</strong><br>Type: Planet<br>Dimension: unknown<br>Characters: Young Jerry, Young Beth, Young Beth, Young Jerry</div>`)[0];
+                popup_52bca930a47ae3868a5fcbcbdb33f37b.setContent(html_2a183adb1344ccf787ad6c53c04256b0);
+            
+        
+
+        marker_3dbca13c1a0c5bb514db8de0fed65939.bindPopup(popup_52bca930a47ae3868a5fcbcbdb33f37b)
+        ;
+
+        
+    
+    
+            var marker_601fcd49b6544b72b8dac741e0a9eb10 = L.marker(
+                [63.66389292652741, 7.179389038460101],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_fb7e828a97860ddfe637f7ab157859eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_601fcd49b6544b72b8dac741e0a9eb10.setIcon(icon_fb7e828a97860ddfe637f7ab157859eb);
+        
+    
+        var popup_5ed5ebb974898728e5dae29e23f4f3cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d354fcefedbd4cd221d7e51f386b84be = $(`<div id="html_d354fcefedbd4cd221d7e51f386b84be" style="width: 100.0%; height: 100.0%;"><strong>Earth (J19ζ7)</strong><br>Type: Planet<br>Dimension: Dimension J19ζ7<br>Characters: None</div>`)[0];
+                popup_5ed5ebb974898728e5dae29e23f4f3cb.setContent(html_d354fcefedbd4cd221d7e51f386b84be);
+            
+        
+
+        marker_601fcd49b6544b72b8dac741e0a9eb10.bindPopup(popup_5ed5ebb974898728e5dae29e23f4f3cb)
+        ;
+
+        
+    
+    
+            var marker_07ad68cd807b47c1b21b070991f38033 = L.marker(
+                [-77.89938576943781, 28.04184517216558],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_78be99ac6f087e02612f02da4b73e3ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_07ad68cd807b47c1b21b070991f38033.setIcon(icon_78be99ac6f087e02612f02da4b73e3ad);
+        
+    
+        var popup_dd734072aaa17f81075ee50a6bf1058d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9820bc85c64c5916607260ff97ddbae5 = $(`<div id="html_9820bc85c64c5916607260ff97ddbae5" style="width: 100.0%; height: 100.0%;"><strong>Roy: A Life Well Lived</strong><br>Type: Game<br>Dimension: Replacement Dimension<br>Characters: Dr. Schmidt, Roy, Roy's Mum, Roy's Wife, Roy's Son</div>`)[0];
+                popup_dd734072aaa17f81075ee50a6bf1058d.setContent(html_9820bc85c64c5916607260ff97ddbae5);
+            
+        
+
+        marker_07ad68cd807b47c1b21b070991f38033.bindPopup(popup_dd734072aaa17f81075ee50a6bf1058d)
+        ;
+
+        
+    
+    
+            var marker_81424b0aa7b99e37cba4663137d909ce = L.marker(
+                [51.85444301268882, 145.35513457229672],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_23da1e8fca6c1869abcc1f05f0bdcccd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_81424b0aa7b99e37cba4663137d909ce.setIcon(icon_23da1e8fca6c1869abcc1f05f0bdcccd);
+        
+    
+        var popup_b4577ae866ab6881dd2a5e926c23e72e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ee1bc7ab6d0e13cf0f4d6da6fb2538aa = $(`<div id="html_ee1bc7ab6d0e13cf0f4d6da6fb2538aa" style="width: 100.0%; height: 100.0%;"><strong>Eric Stoltz Mask Earth</strong><br>Type: Planet<br>Dimension: Eric Stoltz Mask Dimension<br>Characters: None</div>`)[0];
+                popup_b4577ae866ab6881dd2a5e926c23e72e.setContent(html_ee1bc7ab6d0e13cf0f4d6da6fb2538aa);
+            
+        
+
+        marker_81424b0aa7b99e37cba4663137d909ce.bindPopup(popup_b4577ae866ab6881dd2a5e926c23e72e)
+        ;
+
+        
+    
+    
+            var marker_2d4933bd3a74be7caff31887ce310724 = L.marker(
+                [12.397761825152841, -58.242950319490234],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_7d973292f98744bf4f0902ef4dac66ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2d4933bd3a74be7caff31887ce310724.setIcon(icon_7d973292f98744bf4f0902ef4dac66ef);
+        
+    
+        var popup_d5efc14343765ca178219b2d862f5ad1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c70ad6ee102f97d6711aa56c0ab1fcd7 = $(`<div id="html_c70ad6ee102f97d6711aa56c0ab1fcd7" style="width: 100.0%; height: 100.0%;"><strong>Earth (Evil Rick's Target Dimension)</strong><br>Type: Planet<br>Dimension: Evil Rick's Target Dimension<br>Characters: Beth Smith, Jerry Smith, Morty Smith, Rick Sanchez, Summer Smith</div>`)[0];
+                popup_d5efc14343765ca178219b2d862f5ad1.setContent(html_c70ad6ee102f97d6711aa56c0ab1fcd7);
+            
+        
+
+        marker_2d4933bd3a74be7caff31887ce310724.bindPopup(popup_d5efc14343765ca178219b2d862f5ad1)
+        ;
+
+        
+    
+    
+            var marker_e0c403ca3b09a5fa974c3263b0b3000a = L.marker(
+                [84.1694726920098, 144.18197403232824],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_504f081f9c4d6663e4a3706b1b4882ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e0c403ca3b09a5fa974c3263b0b3000a.setIcon(icon_504f081f9c4d6663e4a3706b1b4882ff);
+        
+    
+        var popup_2771415437b8962ecf437285e67cd181 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09afc657e236bfa3df448d46d1c42fb5 = $(`<div id="html_09afc657e236bfa3df448d46d1c42fb5" style="width: 100.0%; height: 100.0%;"><strong>Planet Squanch</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: Birdperson, Courier Flap, Donna Gueterman, Kozbian, Larva Alien, Pat Gueterman, Photography Cyborg, Scropon, Shimshamian, Squanchy, Wedding Bartender</div>`)[0];
+                popup_2771415437b8962ecf437285e67cd181.setContent(html_09afc657e236bfa3df448d46d1c42fb5);
+            
+        
+
+        marker_e0c403ca3b09a5fa974c3263b0b3000a.bindPopup(popup_2771415437b8962ecf437285e67cd181)
+        ;
+
+        
+    
+    
+            var marker_f7756bd6bea8b387e1dfa3a223995ebf = L.marker(
+                [-49.156070591285165, -177.63309820388523],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_5b519b951b0526b9e415dfbd7c5261e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f7756bd6bea8b387e1dfa3a223995ebf.setIcon(icon_5b519b951b0526b9e415dfbd7c5261e4);
+        
+    
+        var popup_cc1867c16c42f13399dc64157bdc8acc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b2bf6e404b762430365f5a483e50ebd = $(`<div id="html_4b2bf6e404b762430365f5a483e50ebd" style="width: 100.0%; height: 100.0%;"><strong>Glaagablaaga</strong><br>Type: Planet<br>Dimension: unknown<br>Characters: None</div>`)[0];
+                popup_cc1867c16c42f13399dc64157bdc8acc.setContent(html_4b2bf6e404b762430365f5a483e50ebd);
+            
+        
+
+        marker_f7756bd6bea8b387e1dfa3a223995ebf.bindPopup(popup_cc1867c16c42f13399dc64157bdc8acc)
+        ;
+
+        
+    
+    
+            var marker_e651c6552f78be2936a6e8a1f7bb20eb = L.marker(
+                [22.27543362305822, -128.7437957821802],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_0fdca1252ed29b901be4a2d9026f1654 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e651c6552f78be2936a6e8a1f7bb20eb.setIcon(icon_0fdca1252ed29b901be4a2d9026f1654);
+        
+    
+        var popup_77d0cd189f022f1f2a21ef362fc94619 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dcb95a81919dcde4aa2043b5634e42b2 = $(`<div id="html_dcb95a81919dcde4aa2043b5634e42b2" style="width: 100.0%; height: 100.0%;"><strong>Resort Planet</strong><br>Type: Planet<br>Dimension: unknown<br>Characters: Gibble Snake, Risotto Groupon, Risotto's Tentacled Henchman, Shmooglite Runner, Tusked Assassin</div>`)[0];
+                popup_77d0cd189f022f1f2a21ef362fc94619.setContent(html_dcb95a81919dcde4aa2043b5634e42b2);
+            
+        
+
+        marker_e651c6552f78be2936a6e8a1f7bb20eb.bindPopup(popup_77d0cd189f022f1f2a21ef362fc94619)
+        ;
+
+        
+    
+    
+            var marker_d1250318ad139e8bfdadc20716a9e76c = L.marker(
+                [78.9691774948991, 137.1256120801517],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_2cf3d76eebba32022b8a66239545b060 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d1250318ad139e8bfdadc20716a9e76c.setIcon(icon_2cf3d76eebba32022b8a66239545b060);
+        
+    
+        var popup_7e03c61a6e0eb52a87fce753e4ae456d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e592ba3d3c202e189e5aff30c02cab8e = $(`<div id="html_e592ba3d3c202e189e5aff30c02cab8e" style="width: 100.0%; height: 100.0%;"><strong>Interdimensional Customs</strong><br>Type: Customs<br>Dimension: unknown<br>Characters: Glenn, Hookah Alien</div>`)[0];
+                popup_7e03c61a6e0eb52a87fce753e4ae456d.setContent(html_e592ba3d3c202e189e5aff30c02cab8e);
+            
+        
+
+        marker_d1250318ad139e8bfdadc20716a9e76c.bindPopup(popup_7e03c61a6e0eb52a87fce753e4ae456d)
+        ;
+
+        
+    
+    
+            var marker_66f0ae7847c4164c42f70f0f8d215264 = L.marker(
+                [-7.693403580317749, 135.45017311542819],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_90cfef533b3e37103beb348ff1b22289 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_66f0ae7847c4164c42f70f0f8d215264.setIcon(icon_90cfef533b3e37103beb348ff1b22289);
+        
+    
+        var popup_28ef2cf560c96a9f05a44642e7d76c04 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f13776808723fa311f6e4602705dc525 = $(`<div id="html_f13776808723fa311f6e4602705dc525" style="width: 100.0%; height: 100.0%;"><strong>Galactic Federation Prison</strong><br>Type: Space station<br>Dimension: unknown<br>Characters: Cornvelious Daniel</div>`)[0];
+                popup_28ef2cf560c96a9f05a44642e7d76c04.setContent(html_f13776808723fa311f6e4602705dc525);
+            
+        
+
+        marker_66f0ae7847c4164c42f70f0f8d215264.bindPopup(popup_28ef2cf560c96a9f05a44642e7d76c04)
+        ;
+
+        
+    
+    
+            var marker_d1cbe72f98868c62c310c289e8a6d609 = L.marker(
+                [-48.44470523604638, 96.26347558917104],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_a5560d25182d33389641b8c2bea8778d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d1cbe72f98868c62c310c289e8a6d609.setIcon(icon_a5560d25182d33389641b8c2bea8778d);
+        
+    
+        var popup_416ca03ef859fa3508a7e5ad0ba17f6e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e50a7e390607fceb31862cd2699f071 = $(`<div id="html_7e50a7e390607fceb31862cd2699f071" style="width: 100.0%; height: 100.0%;"><strong>Gazorpazorp</strong><br>Type: Planet<br>Dimension: unknown<br>Characters: Jackie, Ma-Sha, Veronica Ann Bennet</div>`)[0];
+                popup_416ca03ef859fa3508a7e5ad0ba17f6e.setContent(html_7e50a7e390607fceb31862cd2699f071);
+            
+        
+
+        marker_d1cbe72f98868c62c310c289e8a6d609.bindPopup(popup_416ca03ef859fa3508a7e5ad0ba17f6e)
+        ;
+
+        
+    
+    
+            var marker_08d7b650534b40fdc319e85d915b8eac = L.marker(
+                [-7.363607591652126, 71.10221822301907],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_06fb84a3da7d56c2b0a64f71750e0a4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_08d7b650534b40fdc319e85d915b8eac.setIcon(icon_06fb84a3da7d56c2b0a64f71750e0a4e);
+        
+    
+        var popup_c95da87c8c1f59be0869355b00117970 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79578bd172d70054b753b93b3a7ac55a = $(`<div id="html_79578bd172d70054b753b93b3a7ac55a" style="width: 100.0%; height: 100.0%;"><strong>Hamster in Butt World</strong><br>Type: Planet<br>Dimension: unknown<br>Characters: Hamster In Butt</div>`)[0];
+                popup_c95da87c8c1f59be0869355b00117970.setContent(html_79578bd172d70054b753b93b3a7ac55a);
+            
+        
+
+        marker_08d7b650534b40fdc319e85d915b8eac.bindPopup(popup_c95da87c8c1f59be0869355b00117970)
+        ;
+
+        
+    
+    
+            var marker_0d43f216498a5e493e662be8020b3c54 = L.marker(
+                [-38.793252009147594, -109.57424130670375],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_7f777008b23dcc8b2929782500c2be9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0d43f216498a5e493e662be8020b3c54.setIcon(icon_7f777008b23dcc8b2929782500c2be9d);
+        
+    
+        var popup_e9983ed9ca2e4fbb7fb53d8fc857fdce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b1142c2562af12949f44ccf560a69bf5 = $(`<div id="html_b1142c2562af12949f44ccf560a69bf5" style="width: 100.0%; height: 100.0%;"><strong>Earth (Giant Telepathic Spiders Dimension)</strong><br>Type: Planet<br>Dimension: Giant Telepathic Spiders Dimension<br>Characters: Hunter, Hunter's Father</div>`)[0];
+                popup_e9983ed9ca2e4fbb7fb53d8fc857fdce.setContent(html_b1142c2562af12949f44ccf560a69bf5);
+            
+        
+
+        marker_0d43f216498a5e493e662be8020b3c54.bindPopup(popup_e9983ed9ca2e4fbb7fb53d8fc857fdce)
+        ;
+
+        
+    
+    
+            var marker_16d8b25a78e1920a7a1e482425ceaf3a = L.marker(
+                [89.9422449040301, 110.66335368291885],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_83b3c5c20b9074898f37d7a8b7095575 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_16d8b25a78e1920a7a1e482425ceaf3a.setIcon(icon_83b3c5c20b9074898f37d7a8b7095575);
+        
+    
+        var popup_4c02862f361a6938db0506b8926512c3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_614321e3e617e0426bdf52e713e83085 = $(`<div id="html_614321e3e617e0426bdf52e713e83085" style="width: 100.0%; height: 100.0%;"><strong>Alphabetrium</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: Hydrogen-F, Ice-T, Magma-Q, Magnesium-J, Numbericon</div>`)[0];
+                popup_4c02862f361a6938db0506b8926512c3.setContent(html_614321e3e617e0426bdf52e713e83085);
+            
+        
+
+        marker_16d8b25a78e1920a7a1e482425ceaf3a.bindPopup(popup_4c02862f361a6938db0506b8926512c3)
+        ;
+
+        
+    
+    
+            var marker_f53671c7629f40bc6d7d33829fa59ef0 = L.marker(
+                [-34.34930322558533, -112.19344035744605],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_3b3607054539289d8a5ee4badd8b936b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f53671c7629f40bc6d7d33829fa59ef0.setIcon(icon_3b3607054539289d8a5ee4badd8b936b);
+        
+    
+        var popup_6fc4a8e14b52f48675dd3b8aa1665960 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_90a0790ac626a849fc9ea9b09f76e922 = $(`<div id="html_90a0790ac626a849fc9ea9b09f76e922" style="width: 100.0%; height: 100.0%;"><strong>Jerryboree</strong><br>Type: Daycare<br>Dimension: unknown<br>Characters: Jerry 5-126, Paul Fleishman, Bearded Jerry, Shaved Head Jerry, Tank Top Jerry, Pink Polo Shirt Jerry, Jerryboree Keeper, Jerryboree Receptionist</div>`)[0];
+                popup_6fc4a8e14b52f48675dd3b8aa1665960.setContent(html_90a0790ac626a849fc9ea9b09f76e922);
+            
+        
+
+        marker_f53671c7629f40bc6d7d33829fa59ef0.bindPopup(popup_6fc4a8e14b52f48675dd3b8aa1665960)
+        ;
+
+        
+    
+    
+            var marker_a7da56bcf4c51f6f866b9a4622b3bcd2 = L.marker(
+                [-82.23489541955199, 95.93261325923322],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_0930e6f59071c346279bdf5a2c6894eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a7da56bcf4c51f6f866b9a4622b3bcd2.setIcon(icon_0930e6f59071c346279bdf5a2c6894eb);
+        
+    
+        var popup_ee5fff055cdad97979427ddfd221d699 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d3bd711c3301e2168d5a1f5af75d04ca = $(`<div id="html_d3bd711c3301e2168d5a1f5af75d04ca" style="width: 100.0%; height: 100.0%;"><strong>Krootabulon</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: None</div>`)[0];
+                popup_ee5fff055cdad97979427ddfd221d699.setContent(html_d3bd711c3301e2168d5a1f5af75d04ca);
+            
+        
+
+        marker_a7da56bcf4c51f6f866b9a4622b3bcd2.bindPopup(popup_ee5fff055cdad97979427ddfd221d699)
+        ;
+
+        
+    
+    
+            var marker_5d2af068b9fcec49f3d511ffe6975ff1 = L.marker(
+                [30.86384864384347, -86.67455534122871],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_9f2857f73f6107502d8e5691eadfba74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5d2af068b9fcec49f3d511ffe6975ff1.setIcon(icon_9f2857f73f6107502d8e5691eadfba74);
+        
+    
+        var popup_b668817f22bfe36e6fdc262bc2761cf8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff0c81c95fdd0aa0b230745ceb9f6760 = $(`<div id="html_ff0c81c95fdd0aa0b230745ceb9f6760" style="width: 100.0%; height: 100.0%;"><strong>Zigerion's Base</strong><br>Type: Space station<br>Dimension: Dimension C-137<br>Characters: Cynthia, Kevin, Prince Nebulon, Stu</div>`)[0];
+                popup_b668817f22bfe36e6fdc262bc2761cf8.setContent(html_ff0c81c95fdd0aa0b230745ceb9f6760);
+            
+        
+
+        marker_5d2af068b9fcec49f3d511ffe6975ff1.bindPopup(popup_b668817f22bfe36e6fdc262bc2761cf8)
+        ;
+
+        
+    
+    
+            var marker_5630888977f006d6799c11dee50283f3 = L.marker(
+                [17.94645723403417, -86.22704071526262],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_551458a73575d8fa58b0503ce5620747 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5630888977f006d6799c11dee50283f3.setIcon(icon_551458a73575d8fa58b0503ce5620747);
+        
+    
+        var popup_3c11b012ce7e2700b0b79db4bff016cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_589fbf1a452983ca96a7b0819d37f49c = $(`<div id="html_589fbf1a452983ca96a7b0819d37f49c" style="width: 100.0%; height: 100.0%;"><strong>Pluto</strong><br>Type: Dwarf planet (Celestial Dwarf)<br>Dimension: Replacement Dimension<br>Characters: King Flippy Nips, Scroopy Noopers, Plutonian Hostess, Plutonian Host, Rich Plutonian, Rich Plutonian</div>`)[0];
+                popup_3c11b012ce7e2700b0b79db4bff016cd.setContent(html_589fbf1a452983ca96a7b0819d37f49c);
+            
+        
+
+        marker_5630888977f006d6799c11dee50283f3.bindPopup(popup_3c11b012ce7e2700b0b79db4bff016cd)
+        ;
+
+        
+    
+    
+            var marker_fac8d69cea5a180403719cad3f010a1b = L.marker(
+                [-1.8985541502231769, -71.46234046303734],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_c43e75061e72ffb2af7899ec61f69f7d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fac8d69cea5a180403719cad3f010a1b.setIcon(icon_c43e75061e72ffb2af7899ec61f69f7d);
+        
+    
+        var popup_1bf5a4f594f600a98bf30ee13e7fcd08 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a171014618b86512c2a9eacf9a83464e = $(`<div id="html_a171014618b86512c2a9eacf9a83464e" style="width: 100.0%; height: 100.0%;"><strong>Fantasy World</strong><br>Type: Planet<br>Dimension: Fantasy Dimension<br>Characters: Big Boobed Waitress, King Jellybean, Mr. Booby Buyer, Stair Goblin</div>`)[0];
+                popup_1bf5a4f594f600a98bf30ee13e7fcd08.setContent(html_a171014618b86512c2a9eacf9a83464e);
+            
+        
+
+        marker_fac8d69cea5a180403719cad3f010a1b.bindPopup(popup_1bf5a4f594f600a98bf30ee13e7fcd08)
+        ;
+
+        
+    
+    
+            var marker_c8bd6decd50d4573770f06a4233f9a4e = L.marker(
+                [-62.57910635659906, 15.07268764691051],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_bb523060eff523cf942f49913f491b5d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c8bd6decd50d4573770f06a4233f9a4e.setIcon(icon_bb523060eff523cf942f49913f491b5d);
+        
+    
+        var popup_896aa4c6ae406c74e1f53fe234a2a45f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd51b5aa391e0fbaf7cdcd6bb414146e = $(`<div id="html_dd51b5aa391e0fbaf7cdcd6bb414146e" style="width: 100.0%; height: 100.0%;"><strong>Zeep Xanflorp's Miniverse</strong><br>Type: Miniverse<br>Dimension: Replacement Dimension<br>Characters: The President of the Miniverse</div>`)[0];
+                popup_896aa4c6ae406c74e1f53fe234a2a45f.setContent(html_dd51b5aa391e0fbaf7cdcd6bb414146e);
+            
+        
+
+        marker_c8bd6decd50d4573770f06a4233f9a4e.bindPopup(popup_896aa4c6ae406c74e1f53fe234a2a45f)
+        ;
+
+        
+    
+    
+            var marker_0c3fc31fb88f56199ef5b115a59a411e = L.marker(
+                [1.8540248094084006, -178.10104640385455],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_f02b0a9973cc15b03ef851a2df54a0d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0c3fc31fb88f56199ef5b115a59a411e.setIcon(icon_f02b0a9973cc15b03ef851a2df54a0d3);
+        
+    
+        var popup_09e2789d25fc839881b87e1880381db2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cde80f3c40a372aa3c1aa72811b5152a = $(`<div id="html_cde80f3c40a372aa3c1aa72811b5152a" style="width: 100.0%; height: 100.0%;"><strong>Kyle's Teenyverse</strong><br>Type: Teenyverse<br>Dimension: Replacement Dimension<br>Characters: Kyle, Tree Person</div>`)[0];
+                popup_09e2789d25fc839881b87e1880381db2.setContent(html_cde80f3c40a372aa3c1aa72811b5152a);
+            
+        
+
+        marker_0c3fc31fb88f56199ef5b115a59a411e.bindPopup(popup_09e2789d25fc839881b87e1880381db2)
+        ;
+
+        
+    
+    
+            var marker_3bc96dc084c0892820a9435754eb99f9 = L.marker(
+                [-58.511356518275484, -38.15916740629589],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_563ce71eacb6c41c05e04c0d38666872 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3bc96dc084c0892820a9435754eb99f9.setIcon(icon_563ce71eacb6c41c05e04c0d38666872);
+        
+    
+        var popup_f237ff5e6832070c263ec3acba22af8a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b5695a0f00878729ac1ad2450951e14c = $(`<div id="html_b5695a0f00878729ac1ad2450951e14c" style="width: 100.0%; height: 100.0%;"><strong>Larva Alien's Planet</strong><br>Type: Planet<br>Dimension: Unknown dimension<br>Characters: None</div>`)[0];
+                popup_f237ff5e6832070c263ec3acba22af8a.setContent(html_b5695a0f00878729ac1ad2450951e14c);
+            
+        
+
+        marker_3bc96dc084c0892820a9435754eb99f9.bindPopup(popup_f237ff5e6832070c263ec3acba22af8a)
+        ;
+
+        
+    
+    
+            var marker_b2997d35f164e7fb49c16c010aceeef4 = L.marker(
+                [3.711360399803013, -52.79201876689616],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_8f8933e153ef0654bce11efa36c0a63f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b2997d35f164e7fb49c16c010aceeef4.setIcon(icon_8f8933e153ef0654bce11efa36c0a63f);
+        
+    
+        var popup_3556c58bde927b21c55dabd9f17c95e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_162b5b29740fdf11f48cb8b76832ddbd = $(`<div id="html_162b5b29740fdf11f48cb8b76832ddbd" style="width: 100.0%; height: 100.0%;"><strong>Earth (K-22)</strong><br>Type: Planet<br>Dimension: Dimension K-22<br>Characters: None</div>`)[0];
+                popup_3556c58bde927b21c55dabd9f17c95e0.setContent(html_162b5b29740fdf11f48cb8b76832ddbd);
+            
+        
+
+        marker_b2997d35f164e7fb49c16c010aceeef4.bindPopup(popup_3556c58bde927b21c55dabd9f17c95e0)
+        ;
+
+        
+    
+    
+            var marker_7b40ff32d23b3df890c23e5098018072 = L.marker(
+                [-47.35529293174095, 68.22574998911804],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_42f530a13d032d862517532d153cd799 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7b40ff32d23b3df890c23e5098018072.setIcon(icon_42f530a13d032d862517532d153cd799);
+        
+    
+        var popup_1482ca4b6417b9b169bce6dec9507d19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc1813d59822e65d7c17b1ba39944c05 = $(`<div id="html_cc1813d59822e65d7c17b1ba39944c05" style="width: 100.0%; height: 100.0%;"><strong>Mr. Meeseeks Box</strong><br>Type: Box<br>Dimension: unknown<br>Characters: None</div>`)[0];
+                popup_1482ca4b6417b9b169bce6dec9507d19.setContent(html_cc1813d59822e65d7c17b1ba39944c05);
+            
+        
+
+        marker_7b40ff32d23b3df890c23e5098018072.bindPopup(popup_1482ca4b6417b9b169bce6dec9507d19)
+        ;
+
+        
+    
+    
+            var marker_8e7a9184a43b7cf23d1f3ef02ddeb2e2 = L.marker(
+                [84.7043286933031, 146.10433989311264],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_4acbe045376a2cfcfc25326e345a28ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8e7a9184a43b7cf23d1f3ef02ddeb2e2.setIcon(icon_4acbe045376a2cfcfc25326e345a28ce);
+        
+    
+        var popup_6e2bb4ce616d5aa75025ece3ec2d64af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47baf4621e9b9d9c310d463deb4d7183 = $(`<div id="html_47baf4621e9b9d9c310d463deb4d7183" style="width: 100.0%; height: 100.0%;"><strong>Vindicator's Base</strong><br>Type: Spacecraft<br>Dimension: unknown<br>Characters: Noob-Noob</div>`)[0];
+                popup_6e2bb4ce616d5aa75025ece3ec2d64af.setContent(html_47baf4621e9b9d9c310d463deb4d7183);
+            
+        
+
+        marker_8e7a9184a43b7cf23d1f3ef02ddeb2e2.bindPopup(popup_6e2bb4ce616d5aa75025ece3ec2d64af)
+        ;
+
+        
+    
+    
+            var marker_d3266487dea659e2a13a2f807a039107 = L.marker(
+                [37.8883385120961, 174.81498315575118],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_fc7a6c3b8d0c88366cd103234f8b49d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d3266487dea659e2a13a2f807a039107.setIcon(icon_fc7a6c3b8d0c88366cd103234f8b49d9);
+        
+    
+        var popup_48c785e3ddff0c564cb83cdec07b4d93 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f08049b25db44743f72faaf0ce8f405 = $(`<div id="html_0f08049b25db44743f72faaf0ce8f405" style="width: 100.0%; height: 100.0%;"><strong>Pawn Shop Planet</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: Pawnshop Clerk</div>`)[0];
+                popup_48c785e3ddff0c564cb83cdec07b4d93.setContent(html_0f08049b25db44743f72faaf0ce8f405);
+            
+        
+
+        marker_d3266487dea659e2a13a2f807a039107.bindPopup(popup_48c785e3ddff0c564cb83cdec07b4d93)
+        ;
+
+        
+    
+    
+            var marker_901590b9c7f65edcf64129f105f3ed71 = L.marker(
+                [-1.5471156514107918, 135.83824139965748],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_e3da753ab8732b522cb6ae8392e0d4cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_901590b9c7f65edcf64129f105f3ed71.setIcon(icon_e3da753ab8732b522cb6ae8392e0d4cd);
+        
+    
+        var popup_9ba89122ca681dea5985db0635a90224 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a9301cd61353360cceaa81be75d9dcb = $(`<div id="html_9a9301cd61353360cceaa81be75d9dcb" style="width: 100.0%; height: 100.0%;"><strong>Mega Gargantuan Kingdom</strong><br>Type: Microverse<br>Dimension: Replacement Dimension<br>Characters: Presidentress of The Mega Gargantuans</div>`)[0];
+                popup_9ba89122ca681dea5985db0635a90224.setContent(html_9a9301cd61353360cceaa81be75d9dcb);
+            
+        
+
+        marker_901590b9c7f65edcf64129f105f3ed71.bindPopup(popup_9ba89122ca681dea5985db0635a90224)
+        ;
+
+        
+    
+    
+            var marker_3cb20b1d76ea747912052de72da9d978 = L.marker(
+                [-31.18020740598422, -67.59701934519133],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_7b4d383441a9bb79d1ddcf57118c052b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3cb20b1d76ea747912052de72da9d978.setIcon(icon_7b4d383441a9bb79d1ddcf57118c052b);
+        
+    
+        var popup_5e638b24f9e0c45dc7cc23fd1aae61a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a7371bed3d75e431b355b7646caf630 = $(`<div id="html_1a7371bed3d75e431b355b7646caf630" style="width: 100.0%; height: 100.0%;"><strong>Gear World</strong><br>Type: Planet<br>Dimension: unknown<br>Characters: Revolio Clockberg Jr., Anchor Gear, Gear Cop</div>`)[0];
+                popup_5e638b24f9e0c45dc7cc23fd1aae61a7.setContent(html_1a7371bed3d75e431b355b7646caf630);
+            
+        
+
+        marker_3cb20b1d76ea747912052de72da9d978.bindPopup(popup_5e638b24f9e0c45dc7cc23fd1aae61a7)
+        ;
+
+        
+    
+    
+            var marker_7cdabd13454948720faf51e28a81b89a = L.marker(
+                [18.747236468576958, -175.89934283672633],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_181f75c04a21f7d15b4234a8699d05ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7cdabd13454948720faf51e28a81b89a.setIcon(icon_181f75c04a21f7d15b4234a8699d05ae);
+        
+    
+        var popup_dee235dfa5b450df7d1757b008aac960 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_be91f14a8ecbf2e4257008086039e78c = $(`<div id="html_be91f14a8ecbf2e4257008086039e78c" style="width: 100.0%; height: 100.0%;"><strong>Earth (D-99)</strong><br>Type: Planet<br>Dimension: Dimension D-99<br>Characters: None</div>`)[0];
+                popup_dee235dfa5b450df7d1757b008aac960.setContent(html_be91f14a8ecbf2e4257008086039e78c);
+            
+        
+
+        marker_7cdabd13454948720faf51e28a81b89a.bindPopup(popup_dee235dfa5b450df7d1757b008aac960)
+        ;
+
+        
+    
+    
+            var marker_85c630ee46c2910b6c80cdc3819a14d6 = L.marker(
+                [-16.97661946393987, 163.83998481476607],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_1f3181a00c535443780b4f8c76a6e7ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_85c630ee46c2910b6c80cdc3819a14d6.setIcon(icon_1f3181a00c535443780b4f8c76a6e7ee);
+        
+    
+        var popup_a22011230b831acc0a3de9f8921857a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dde3d720b63882595dc0d15d2769aa9f = $(`<div id="html_dde3d720b63882595dc0d15d2769aa9f" style="width: 100.0%; height: 100.0%;"><strong>Earth (D716)</strong><br>Type: Planet<br>Dimension: Dimension D716<br>Characters: None</div>`)[0];
+                popup_a22011230b831acc0a3de9f8921857a7.setContent(html_dde3d720b63882595dc0d15d2769aa9f);
+            
+        
+
+        marker_85c630ee46c2910b6c80cdc3819a14d6.bindPopup(popup_a22011230b831acc0a3de9f8921857a7)
+        ;
+
+        
+    
+    
+            var marker_21677f02fe0d58b68e3bcb8249893d66 = L.marker(
+                [4.9537648436088375, 106.94284122407629],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_2243c70ac95c91970ebfc031cb1f29ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_21677f02fe0d58b68e3bcb8249893d66.setIcon(icon_2243c70ac95c91970ebfc031cb1f29ef);
+        
+    
+        var popup_53d114906f8966dee37fd9fe38cf2a5e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_079a845568b291d9285ebfb8d9ec0623 = $(`<div id="html_079a845568b291d9285ebfb8d9ec0623" style="width: 100.0%; height: 100.0%;"><strong>Earth (D716-B)</strong><br>Type: Planet<br>Dimension: Dimension D716-B<br>Characters: None</div>`)[0];
+                popup_53d114906f8966dee37fd9fe38cf2a5e.setContent(html_079a845568b291d9285ebfb8d9ec0623);
+            
+        
+
+        marker_21677f02fe0d58b68e3bcb8249893d66.bindPopup(popup_53d114906f8966dee37fd9fe38cf2a5e)
+        ;
+
+        
+    
+    
+            var marker_ae88229eb2f7cdfe27c19ff1eb667b1b = L.marker(
+                [41.422307130027036, -85.55141795090556],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_000f7c62c3bca07182674ae2a50c0d9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ae88229eb2f7cdfe27c19ff1eb667b1b.setIcon(icon_000f7c62c3bca07182674ae2a50c0d9b);
+        
+    
+        var popup_081d19f77493f8dce0d09bd58bba8a98 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe7e42d42f1d445519403637489ea82b = $(`<div id="html_fe7e42d42f1d445519403637489ea82b" style="width: 100.0%; height: 100.0%;"><strong>Earth (D716-C)</strong><br>Type: Planet<br>Dimension: Dimension D716-C<br>Characters: None</div>`)[0];
+                popup_081d19f77493f8dce0d09bd58bba8a98.setContent(html_fe7e42d42f1d445519403637489ea82b);
+            
+        
+
+        marker_ae88229eb2f7cdfe27c19ff1eb667b1b.bindPopup(popup_081d19f77493f8dce0d09bd58bba8a98)
+        ;
+
+        
+    
+    
+            var marker_2294a37ddcfb4b4cec3cb35473012b46 = L.marker(
+                [-60.47640177658624, 20.014253574810823],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_915a88469320ebd7a4e92ae079e88913 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2294a37ddcfb4b4cec3cb35473012b46.setIcon(icon_915a88469320ebd7a4e92ae079e88913);
+        
+    
+        var popup_e12d11c08b5a6f239648cadae634bdba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8dacecb8a8ddd26a8829362915176f43 = $(`<div id="html_8dacecb8a8ddd26a8829362915176f43" style="width: 100.0%; height: 100.0%;"><strong>Earth (J-22)</strong><br>Type: Planet<br>Dimension: Dimension J-22<br>Characters: None</div>`)[0];
+                popup_e12d11c08b5a6f239648cadae634bdba.setContent(html_8dacecb8a8ddd26a8829362915176f43);
+            
+        
+
+        marker_2294a37ddcfb4b4cec3cb35473012b46.bindPopup(popup_e12d11c08b5a6f239648cadae634bdba)
+        ;
+
+        
+    
+    
+            var marker_4f5bd1885607905e22c454525a8a2b3e = L.marker(
+                [12.35317410099276, -85.76502094907039],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_43ef3b3c7b72350f9a89a2aa59f3e647 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4f5bd1885607905e22c454525a8a2b3e.setIcon(icon_43ef3b3c7b72350f9a89a2aa59f3e647);
+        
+    
+        var popup_44457b6ea739d2a8ccd5072d9678794a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a52af87570402d5d71ddf28eb420e3e9 = $(`<div id="html_a52af87570402d5d71ddf28eb420e3e9" style="width: 100.0%; height: 100.0%;"><strong>Froopyland</strong><br>Type: Artificially generated world<br>Dimension: Replacement Dimension<br>Characters: Thomas Lipkip</div>`)[0];
+                popup_44457b6ea739d2a8ccd5072d9678794a.setContent(html_a52af87570402d5d71ddf28eb420e3e9);
+            
+        
+
+        marker_4f5bd1885607905e22c454525a8a2b3e.bindPopup(popup_44457b6ea739d2a8ccd5072d9678794a)
+        ;
+
+        
+    
+    
+            var marker_b0280ed831abc12134ed286dd7c2994c = L.marker(
+                [67.74280111036174, 90.75540264730535],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_c6fd3ab79e9fc7563d3d65478cf69422 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b0280ed831abc12134ed286dd7c2994c.setIcon(icon_c6fd3ab79e9fc7563d3d65478cf69422);
+        
+    
+        var popup_09110a777429e61d3bf451a523418a20 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_89ac304451c229490dd76f57dfeb6183 = $(`<div id="html_89ac304451c229490dd76f57dfeb6183" style="width: 100.0%; height: 100.0%;"><strong>Detoxifier</strong><br>Type: Machine<br>Dimension: Replacement Dimension<br>Characters: None</div>`)[0];
+                popup_09110a777429e61d3bf451a523418a20.setContent(html_89ac304451c229490dd76f57dfeb6183);
+            
+        
+
+        marker_b0280ed831abc12134ed286dd7c2994c.bindPopup(popup_09110a777429e61d3bf451a523418a20)
+        ;
+
+        
+    
+    
+            var marker_062bb68e781b814b6849664d996e4ffe = L.marker(
+                [-39.04219994557677, 91.617338342489],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_1f16435127ee5d37c955d228eb1af1f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_062bb68e781b814b6849664d996e4ffe.setIcon(icon_1f16435127ee5d37c955d228eb1af1f2);
+        
+    
+        var popup_2a55a2cf62327b65726ddbf16090a7c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_92e64599de75b6000c96b133ad0d231f = $(`<div id="html_92e64599de75b6000c96b133ad0d231f" style="width: 100.0%; height: 100.0%;"><strong>Trunk World</strong><br>Type: Planet<br>Dimension: unknown<br>Characters: None</div>`)[0];
+                popup_2a55a2cf62327b65726ddbf16090a7c4.setContent(html_92e64599de75b6000c96b133ad0d231f);
+            
+        
+
+        marker_062bb68e781b814b6849664d996e4ffe.bindPopup(popup_2a55a2cf62327b65726ddbf16090a7c4)
+        ;
+
+        
+    
+    
+            var marker_90453132e881fe8957be90e8790ca1b1 = L.marker(
+                [-77.47152935506173, 108.68426807243145],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_b2591f0ac8de1f3b4a1c2a2128232620 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_90453132e881fe8957be90e8790ca1b1.setIcon(icon_b2591f0ac8de1f3b4a1c2a2128232620);
+        
+    
+        var popup_9d1930cd115d064ec40cd8044be2a1a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ef53dfb51494e69a11fcb925876ee82 = $(`<div id="html_6ef53dfb51494e69a11fcb925876ee82" style="width: 100.0%; height: 100.0%;"><strong>Plopstar</strong><br>Type: Planet<br>Dimension: unknown<br>Characters: Tumblorkian</div>`)[0];
+                popup_9d1930cd115d064ec40cd8044be2a1a6.setContent(html_6ef53dfb51494e69a11fcb925876ee82);
+            
+        
+
+        marker_90453132e881fe8957be90e8790ca1b1.bindPopup(popup_9d1930cd115d064ec40cd8044be2a1a6)
+        ;
+
+        
+    
+    
+            var marker_d63503173e05e701d483c7e9328a72ea = L.marker(
+                [0.26975719676556764, 177.24524583803003],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_eac519d6853b318efbdf9a950573d519 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d63503173e05e701d483c7e9328a72ea.setIcon(icon_eac519d6853b318efbdf9a950573d519);
+        
+    
+        var popup_4b8e07edd8b7921c689eb356b97c13b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c2cc91f4965a2a87280ef490683498bb = $(`<div id="html_c2cc91f4965a2a87280ef490683498bb" style="width: 100.0%; height: 100.0%;"><strong>Blips and Chitz</strong><br>Type: Arcade<br>Dimension: Replacement Dimension<br>Characters: None</div>`)[0];
+                popup_4b8e07edd8b7921c689eb356b97c13b4.setContent(html_c2cc91f4965a2a87280ef490683498bb);
+            
+        
+
+        marker_d63503173e05e701d483c7e9328a72ea.bindPopup(popup_4b8e07edd8b7921c689eb356b97c13b4)
+        ;
+
+        
+    
+    
+            var marker_9c9e9666c19e0ca13ad5cdfb984cf4da = L.marker(
+                [12.785147873492221, -144.83973384103473],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_7d4f1964b7162045a689fe03543bb758 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9c9e9666c19e0ca13ad5cdfb984cf4da.setIcon(icon_7d4f1964b7162045a689fe03543bb758);
+        
+    
+        var popup_4476838871ae02b127cf08a0684cb7dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c3b8c171306a5bbbba1577487e1ac4d = $(`<div id="html_7c3b8c171306a5bbbba1577487e1ac4d" style="width: 100.0%; height: 100.0%;"><strong>Girvonesk</strong><br>Type: unknown<br>Dimension: unknown<br>Characters: None</div>`)[0];
+                popup_4476838871ae02b127cf08a0684cb7dc.setContent(html_7c3b8c171306a5bbbba1577487e1ac4d);
+            
+        
+
+        marker_9c9e9666c19e0ca13ad5cdfb984cf4da.bindPopup(popup_4476838871ae02b127cf08a0684cb7dc)
+        ;
+
+        
+    
+    
+            var marker_b75b6e0bb3fd3335c1950a3d08782dcc = L.marker(
+                [-87.93661412270832, -165.25400307816224],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_fd6efb4fc88559fd8408b9d0ef4c32de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b75b6e0bb3fd3335c1950a3d08782dcc.setIcon(icon_fd6efb4fc88559fd8408b9d0ef4c32de);
+        
+    
+        var popup_c748443cc5a02f17cbe6997528206b35 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd7423c74be69b2f9084a4000bc107c4 = $(`<div id="html_fd7423c74be69b2f9084a4000bc107c4" style="width: 100.0%; height: 100.0%;"><strong>Earth (C-35)</strong><br>Type: Planet<br>Dimension: Dimension C-35<br>Characters: None</div>`)[0];
+                popup_c748443cc5a02f17cbe6997528206b35.setContent(html_fd7423c74be69b2f9084a4000bc107c4);
+            
+        
+
+        marker_b75b6e0bb3fd3335c1950a3d08782dcc.bindPopup(popup_c748443cc5a02f17cbe6997528206b35)
+        ;
+
+        
+    
+    
+            var marker_d2f16e3a7da51ca3be4f411ab2c9d1e3 = L.marker(
+                [71.84106890213423, 150.98985141470183],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_cf041a633bb2b046e254ed8691aa5cab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d2f16e3a7da51ca3be4f411ab2c9d1e3.setIcon(icon_cf041a633bb2b046e254ed8691aa5cab);
+        
+    
+        var popup_ec8321c0ac16075ee07a68128233a2d3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_89d32fbb12133b4f9590a9601d54d026 = $(`<div id="html_89d32fbb12133b4f9590a9601d54d026" style="width: 100.0%; height: 100.0%;"><strong>Snuffles' Dream</strong><br>Type: Dream<br>Dimension: Dimension C-137<br>Characters: Fido, Accountant dog</div>`)[0];
+                popup_ec8321c0ac16075ee07a68128233a2d3.setContent(html_89d32fbb12133b4f9590a9601d54d026);
+            
+        
+
+        marker_d2f16e3a7da51ca3be4f411ab2c9d1e3.bindPopup(popup_ec8321c0ac16075ee07a68128233a2d3)
+        ;
+
+        
+    
+    
+            var marker_828b20ace095e5dce7240508147986ef = L.marker(
+                [57.62081240302396, 98.91888005832567],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_afed662a2525cea6435041f26856e405 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_828b20ace095e5dce7240508147986ef.setIcon(icon_afed662a2525cea6435041f26856e405);
+        
+    
+        var popup_4f36d17ea355153990af79fe1a9817f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7fe70db1758a2b6a666287d9a213d6d8 = $(`<div id="html_7fe70db1758a2b6a666287d9a213d6d8" style="width: 100.0%; height: 100.0%;"><strong>Earth (Pizza Dimension)</strong><br>Type: Planet<br>Dimension: Pizza Dimension<br>Characters: Pizza-person, Pizza-person</div>`)[0];
+                popup_4f36d17ea355153990af79fe1a9817f0.setContent(html_7fe70db1758a2b6a666287d9a213d6d8);
+            
+        
+
+        marker_828b20ace095e5dce7240508147986ef.bindPopup(popup_4f36d17ea355153990af79fe1a9817f0)
+        ;
+
+        
+    
+    
+            var marker_69d289f7321bdd989af926d962c13d2c = L.marker(
+                [-86.48866109419716, -22.10885343888188],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_aaa509b44d00be5c24cc21c4596af2a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_69d289f7321bdd989af926d962c13d2c.setIcon(icon_aaa509b44d00be5c24cc21c4596af2a9);
+        
+    
+        var popup_c2bbb19deb5afbce57be45e63a628684 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb81bc6134a3ec6d3b2149f1623a9ab1 = $(`<div id="html_fb81bc6134a3ec6d3b2149f1623a9ab1" style="width: 100.0%; height: 100.0%;"><strong>Earth (Phone Dimension)</strong><br>Type: Planet<br>Dimension: Phone Dimension<br>Characters: Michael Jackson, Phone-person, Phone-person</div>`)[0];
+                popup_c2bbb19deb5afbce57be45e63a628684.setContent(html_fb81bc6134a3ec6d3b2149f1623a9ab1);
+            
+        
+
+        marker_69d289f7321bdd989af926d962c13d2c.bindPopup(popup_c2bbb19deb5afbce57be45e63a628684)
+        ;
+
+        
+    
+    
+            var marker_1f86404ce51db54e28d2d5c68b4b6785 = L.marker(
+                [-57.803205566447886, 152.7539204044537],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_30cb41caf5d3c7a0d622bf4b4b2b5629 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1f86404ce51db54e28d2d5c68b4b6785.setIcon(icon_30cb41caf5d3c7a0d622bf4b4b2b5629);
+        
+    
+        var popup_81001f19ed1e4b7e9e67fd40e5e12327 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ed04f03f749e2caad3e0ff4f060f904 = $(`<div id="html_8ed04f03f749e2caad3e0ff4f060f904" style="width: 100.0%; height: 100.0%;"><strong>Greasy Grandma World</strong><br>Type: Planet<br>Dimension: unknown<br>Characters: Greasy Grandma</div>`)[0];
+                popup_81001f19ed1e4b7e9e67fd40e5e12327.setContent(html_8ed04f03f749e2caad3e0ff4f060f904);
+            
+        
+
+        marker_1f86404ce51db54e28d2d5c68b4b6785.bindPopup(popup_81001f19ed1e4b7e9e67fd40e5e12327)
+        ;
+
+        
+    
+    
+            var marker_1dba84067615f7806e029de53273e976 = L.marker(
+                [-56.71167030704407, 22.01038393493016],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_96d7d6caa02f2ed3648dd5d03e94d7ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1dba84067615f7806e029de53273e976.setIcon(icon_96d7d6caa02f2ed3648dd5d03e94d7ae);
+        
+    
+        var popup_12aa884572893462c2cccd73b048a4ad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5230e492a5905300b3c9c53c165a90fa = $(`<div id="html_5230e492a5905300b3c9c53c165a90fa" style="width: 100.0%; height: 100.0%;"><strong>Earth (Chair Dimension)</strong><br>Type: Planet<br>Dimension: Chair Dimension<br>Characters: Chair-person, Chair-person, Chair-homeless, Chair-waiter</div>`)[0];
+                popup_12aa884572893462c2cccd73b048a4ad.setContent(html_5230e492a5905300b3c9c53c165a90fa);
+            
+        
+
+        marker_1dba84067615f7806e029de53273e976.bindPopup(popup_12aa884572893462c2cccd73b048a4ad)
+        ;
+
+        
+    
+    
+            var marker_22509aed2c26b74ba7a61439b7e3b51a = L.marker(
+                [-41.17438760100257, -160.21832883077067],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_61a7bea5a17281d9dfc53a8934644a7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_22509aed2c26b74ba7a61439b7e3b51a.setIcon(icon_61a7bea5a17281d9dfc53a8934644a7b);
+        
+    
+        var popup_1adf8b5bb43bbb4dd46f352566a6e714 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ecbe6b9555d362216f1a51caa432bd93 = $(`<div id="html_ecbe6b9555d362216f1a51caa432bd93" style="width: 100.0%; height: 100.0%;"><strong>Árboles Mentirosos</strong><br>Type: Planet<br>Dimension: unknown<br>Characters: None</div>`)[0];
+                popup_1adf8b5bb43bbb4dd46f352566a6e714.setContent(html_ecbe6b9555d362216f1a51caa432bd93);
+            
+        
+
+        marker_22509aed2c26b74ba7a61439b7e3b51a.bindPopup(popup_1adf8b5bb43bbb4dd46f352566a6e714)
+        ;
+
+        
+    
+    
+            var marker_d4ffe484f3e0a2f386292112229e262e = L.marker(
+                [-6.71959852149989, -61.110755436147585],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_52fb36900d042a5b7a774f5591f067b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d4ffe484f3e0a2f386292112229e262e.setIcon(icon_52fb36900d042a5b7a774f5591f067b6);
+        
+    
+        var popup_43617b348b0105b1fc81df04acc0b0b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c01ebea882d09825b9df093ef68b3dc1 = $(`<div id="html_c01ebea882d09825b9df093ef68b3dc1" style="width: 100.0%; height: 100.0%;"><strong>Alien Day Spa</strong><br>Type: Spa<br>Dimension: unknown<br>Characters: Alien Spa Employee</div>`)[0];
+                popup_43617b348b0105b1fc81df04acc0b0b5.setContent(html_c01ebea882d09825b9df093ef68b3dc1);
+            
+        
+
+        marker_d4ffe484f3e0a2f386292112229e262e.bindPopup(popup_43617b348b0105b1fc81df04acc0b0b5)
+        ;
+
+        
+    
+    
+            var marker_fe57324dc958bc40aa3d61a6e10d5840 = L.marker(
+                [27.107818198324097, 62.68436910342592],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_254391a68b5c70fe9d9551e2d779d58f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fe57324dc958bc40aa3d61a6e10d5840.setIcon(icon_254391a68b5c70fe9d9551e2d779d58f);
+        
+    
+        var popup_aae989a00f3861cf7bf15b5eac36a515 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_361d92d9e8138992d98fd1b0aebdccea = $(`<div id="html_361d92d9e8138992d98fd1b0aebdccea" style="width: 100.0%; height: 100.0%;"><strong>Earth (Fascist Dimension)</strong><br>Type: Planet<br>Dimension: Fascist Dimension<br>Characters: Mr. Meeseeks, Fascist Rick, Fascist Morty, Fascist Mr. President, Fascist Rick’s Clone, Revolio Clockberg Jr.</div>`)[0];
+                popup_aae989a00f3861cf7bf15b5eac36a515.setContent(html_361d92d9e8138992d98fd1b0aebdccea);
+            
+        
+
+        marker_fe57324dc958bc40aa3d61a6e10d5840.bindPopup(popup_aae989a00f3861cf7bf15b5eac36a515)
+        ;
+
+        
+    
+    
+            var marker_9956ba2a54fdc0057f785c2c850e2466 = L.marker(
+                [54.02771071161618, -6.690931021355993],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_6e98b6ce3ecbe8696e239f59496c1b78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9956ba2a54fdc0057f785c2c850e2466.setIcon(icon_6e98b6ce3ecbe8696e239f59496c1b78);
+        
+    
+        var popup_e12ca9b250f89798207b6bf8b750f86b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a940cdd3d1a577445026cd4534fa5d9c = $(`<div id="html_a940cdd3d1a577445026cd4534fa5d9c" style="width: 100.0%; height: 100.0%;"><strong>Snake Planet</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: Shleemypants, Slippy, Robot Snake, Snake Hitler, Snake Lincoln, Snake Linguist, Snake Terminator, Snake Soldier, Snake with Legs, Secret Service Snake, Anchosnake, Anchosnake, 80's snake, Cavesnake, Snake Reporter</div>`)[0];
+                popup_e12ca9b250f89798207b6bf8b750f86b.setContent(html_a940cdd3d1a577445026cd4534fa5d9c);
+            
+        
+
+        marker_9956ba2a54fdc0057f785c2c850e2466.bindPopup(popup_e12ca9b250f89798207b6bf8b750f86b)
+        ;
+
+        
+    
+    
+            var marker_d253606717ffbaca396d150d2d1e5f62 = L.marker(
+                [49.79686325187188, 58.235922638461176],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_16ad8cf894a42c87a968e4c02c3d6dc2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d253606717ffbaca396d150d2d1e5f62.setIcon(icon_16ad8cf894a42c87a968e4c02c3d6dc2);
+        
+    
+        var popup_7eda4132014f753ca6839b74c6827422 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_634004edb72db34502f06e7953235877 = $(`<div id="html_634004edb72db34502f06e7953235877" style="width: 100.0%; height: 100.0%;"><strong>Forbodulon Prime</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: Crystal Poacher, Crystal Poacher, Crystal Poacher</div>`)[0];
+                popup_7eda4132014f753ca6839b74c6827422.setContent(html_634004edb72db34502f06e7953235877);
+            
+        
+
+        marker_d253606717ffbaca396d150d2d1e5f62.bindPopup(popup_7eda4132014f753ca6839b74c6827422)
+        ;
+
+        
+    
+    
+            var marker_70e7b209fc9756062c4d8fa782b84ec4 = L.marker(
+                [10.34402648883325, 102.57775778932734],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_2d7dcdc1aba35fcfca2d24db368b8dd5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_70e7b209fc9756062c4d8fa782b84ec4.setIcon(icon_2d7dcdc1aba35fcfca2d24db368b8dd5);
+        
+    
+        var popup_e9e39819e7a083c882cc8449379feb60 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e8c676a3946a01731741a401b9b2779c = $(`<div id="html_e8c676a3946a01731741a401b9b2779c" style="width: 100.0%; height: 100.0%;"><strong>Earth (Fascist Shrimp Dimension)</strong><br>Type: Planet<br>Dimension: Fascist Shrimp Dimension<br>Characters: Fascist Shrimp Rick, Fascist Shrimp Rick’s Clone, Fascist Shrimp Morty, Fascist Shrimp SS</div>`)[0];
+                popup_e9e39819e7a083c882cc8449379feb60.setContent(html_e8c676a3946a01731741a401b9b2779c);
+            
+        
+
+        marker_70e7b209fc9756062c4d8fa782b84ec4.bindPopup(popup_e9e39819e7a083c882cc8449379feb60)
+        ;
+
+        
+    
+    
+            var marker_a9865a668803a8906f86928096b1e8d8 = L.marker(
+                [80.02685144231717, 1.2025157966299957],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_4613a4b61dbe7deb5365e17f5c8721ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a9865a668803a8906f86928096b1e8d8.setIcon(icon_4613a4b61dbe7deb5365e17f5c8721ce);
+        
+    
+        var popup_3567a394344182917cb0fce6357482f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ec6bb7a0df2f0639fc602fba130723d = $(`<div id="html_1ec6bb7a0df2f0639fc602fba130723d" style="width: 100.0%; height: 100.0%;"><strong>Earth (Fascist Teddy Bear Dimension)</strong><br>Type: Planet<br>Dimension: Fascist Teddy Bear Dimension<br>Characters: Fascist Teddy Bear Rick, Fascist Teddy Bear Rick’s Clone</div>`)[0];
+                popup_3567a394344182917cb0fce6357482f7.setContent(html_1ec6bb7a0df2f0639fc602fba130723d);
+            
+        
+
+        marker_a9865a668803a8906f86928096b1e8d8.bindPopup(popup_3567a394344182917cb0fce6357482f7)
+        ;
+
+        
+    
+    
+            var marker_1b72d5486721f48d87765df9143e504f = L.marker(
+                [-52.39604175518237, -48.86533832717157],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_bb3251a928c0797ca425dd34a0993059 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1b72d5486721f48d87765df9143e504f.setIcon(icon_bb3251a928c0797ca425dd34a0993059);
+        
+    
+        var popup_6c1ad49d91f8e58a63d91486c68a2fe2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_74611ed0d76b2f21b7ceb6de16359e9f = $(`<div id="html_74611ed0d76b2f21b7ceb6de16359e9f" style="width: 100.0%; height: 100.0%;"><strong>Earth (Wasp Dimension)</strong><br>Type: Planet<br>Dimension: Wasp Dimension<br>Characters: Caterpillar Mr. Goldenfold, Wasp Morty, Wasp Summer, Wasp Jerry, Wasp Beth, Caterpillar Mr. Goldenfold’s Larvae</div>`)[0];
+                popup_6c1ad49d91f8e58a63d91486c68a2fe2.setContent(html_74611ed0d76b2f21b7ceb6de16359e9f);
+            
+        
+
+        marker_1b72d5486721f48d87765df9143e504f.bindPopup(popup_6c1ad49d91f8e58a63d91486c68a2fe2)
+        ;
+
+        
+    
+    
+            var marker_f091b6b021245885407b81d0faaf60e2 = L.marker(
+                [50.41606901713129, 11.05063606894592],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_efe2b1f78080f8638982a0c1cf2278d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f091b6b021245885407b81d0faaf60e2.setIcon(icon_efe2b1f78080f8638982a0c1cf2278d7);
+        
+    
+        var popup_1a58713ae0ec702777a2699aebf66b8f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b8826ee2342407a44eceaf1f7c2507b6 = $(`<div id="html_b8826ee2342407a44eceaf1f7c2507b6" style="width: 100.0%; height: 100.0%;"><strong>Monogatron Mothership</strong><br>Type: Space station<br>Dimension: Replacement Dimension<br>Characters: Glootie, Mothership Intern, Monogatron Leader, Monogatron Queen</div>`)[0];
+                popup_1a58713ae0ec702777a2699aebf66b8f.setContent(html_b8826ee2342407a44eceaf1f7c2507b6);
+            
+        
+
+        marker_f091b6b021245885407b81d0faaf60e2.bindPopup(popup_1a58713ae0ec702777a2699aebf66b8f)
+        ;
+
+        
+    
+    
+            var marker_5f06f631fc6a68743421efb1955278b1 = L.marker(
+                [12.722260678906252, 76.49635894964928],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_a9950e01f6ee50618b31a6ab399aee87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5f06f631fc6a68743421efb1955278b1.setIcon(icon_a9950e01f6ee50618b31a6ab399aee87);
+        
+    
+        var popup_9bb77cc11025ff7a7edf74a435d092e7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e71724c6f6d1336e33aad803c1cec5b = $(`<div id="html_7e71724c6f6d1336e33aad803c1cec5b" style="width: 100.0%; height: 100.0%;"><strong>Gorgon Quadrant</strong><br>Type: Quadrant<br>Dimension: Replacement Dimension<br>Characters: Vermigurber</div>`)[0];
+                popup_9bb77cc11025ff7a7edf74a435d092e7.setContent(html_7e71724c6f6d1336e33aad803c1cec5b);
+            
+        
+
+        marker_5f06f631fc6a68743421efb1955278b1.bindPopup(popup_9bb77cc11025ff7a7edf74a435d092e7)
+        ;
+
+        
+    
+    
+            var marker_5fda58a258065a0b6125873d2d23b630 = L.marker(
+                [75.3271039157361, 35.71917435879294],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_64b11059f4770284fafd04437b663473 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5fda58a258065a0b6125873d2d23b630.setIcon(icon_64b11059f4770284fafd04437b663473);
+        
+    
+        var popup_0d47e07750ddbb48636fa7e8d88e1c8c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a01c61222cbf807b5196eb93941b50a9 = $(`<div id="html_a01c61222cbf807b5196eb93941b50a9" style="width: 100.0%; height: 100.0%;"><strong>Midland Quasar</strong><br>Type: Quasar<br>Dimension: Replacement Dimension<br>Characters: Lizard, Deliverance</div>`)[0];
+                popup_0d47e07750ddbb48636fa7e8d88e1c8c.setContent(html_a01c61222cbf807b5196eb93941b50a9);
+            
+        
+
+        marker_5fda58a258065a0b6125873d2d23b630.bindPopup(popup_0d47e07750ddbb48636fa7e8d88e1c8c)
+        ;
+
+        
+    
+    
+            var marker_6d5c45c7769b2b270b0acf74a34e17f4 = L.marker(
+                [87.562646168963, -157.42240377099256],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_44ec45db9513355921a6a89c33f44d19 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6d5c45c7769b2b270b0acf74a34e17f4.setIcon(icon_44ec45db9513355921a6a89c33f44d19);
+        
+    
+        var popup_8db3c3aa12045b54f7e0ab606232aef1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a56858b75815bd4ed7557430cb2783c = $(`<div id="html_9a56858b75815bd4ed7557430cb2783c" style="width: 100.0%; height: 100.0%;"><strong>Mount Space Everest</strong><br>Type: Mount<br>Dimension: Replacement Dimension<br>Characters: Tony</div>`)[0];
+                popup_8db3c3aa12045b54f7e0ab606232aef1.setContent(html_9a56858b75815bd4ed7557430cb2783c);
+            
+        
+
+        marker_6d5c45c7769b2b270b0acf74a34e17f4.bindPopup(popup_8db3c3aa12045b54f7e0ab606232aef1)
+        ;
+
+        
+    
+    
+            var marker_d46db0a9f13cbeb5ffaf9698345f5004 = L.marker(
+                [30.656024638208663, 12.588605202422627],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_c9e7dd794cfb6de12374f54a2eb268d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d46db0a9f13cbeb5ffaf9698345f5004.setIcon(icon_c9e7dd794cfb6de12374f54a2eb268d6);
+        
+    
+        var popup_3ae8717d0e66efd71295c107c734ec74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_867ba8969ad245995fe08addde156b4e = $(`<div id="html_867ba8969ad245995fe08addde156b4e" style="width: 100.0%; height: 100.0%;"><strong>Globaflyn</strong><br>Type: Liquid<br>Dimension: Replacement Dimension<br>Characters: Tony’s Wife, Mountain Sweat Jerry</div>`)[0];
+                popup_3ae8717d0e66efd71295c107c734ec74.setContent(html_867ba8969ad245995fe08addde156b4e);
+            
+        
+
+        marker_d46db0a9f13cbeb5ffaf9698345f5004.bindPopup(popup_3ae8717d0e66efd71295c107c734ec74)
+        ;
+
+        
+    
+    
+            var marker_1a82dfb99d5de46808d4517ae5727b50 = L.marker(
+                [4.562652565155005, 137.96835299469922],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_0157cc9a7bb0158680bd6e6a6e2cf0ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1a82dfb99d5de46808d4517ae5727b50.setIcon(icon_0157cc9a7bb0158680bd6e6a6e2cf0ba);
+        
+    
+        var popup_90a064e608576880d8f94acdf988080f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9841fdac11e2ad8470d38df6cea06c6a = $(`<div id="html_9841fdac11e2ad8470d38df6cea06c6a" style="width: 100.0%; height: 100.0%;"><strong>Heist-Con</strong><br>Type: Convention<br>Dimension: Replacement Dimension<br>Characters: Miles Knightly, Heist-Con Receptionist, Angie Flint, Glar, Truckula, Snake Arms, Double Microwawe, Monitor Lord, Key Catcher, The Shapeshiftress</div>`)[0];
+                popup_90a064e608576880d8f94acdf988080f.setContent(html_9841fdac11e2ad8470d38df6cea06c6a);
+            
+        
+
+        marker_1a82dfb99d5de46808d4517ae5727b50.bindPopup(popup_90a064e608576880d8f94acdf988080f)
+        ;
+
+        
+    
+    
+            var marker_d66c6158c445193ba7fd3f20b8d3bdef = L.marker(
+                [56.130760896972674, -14.417198144798363],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_ff02eeeb0f2b826c6cdd721ac0b3fbea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d66c6158c445193ba7fd3f20b8d3bdef.setIcon(icon_ff02eeeb0f2b826c6cdd721ac0b3fbea);
+        
+    
+        var popup_54a57876169b6841649374e799c9fe5d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8caf0de83fcbb39ff2cc3277b7180c2b = $(`<div id="html_8caf0de83fcbb39ff2cc3277b7180c2b" style="width: 100.0%; height: 100.0%;"><strong>Heistotron Base</strong><br>Type: Space station<br>Dimension: Replacement Dimension<br>Characters: Heistotron, Randotron, Hephaestus, Ventriloquiver, Elon Tusk</div>`)[0];
+                popup_54a57876169b6841649374e799c9fe5d.setContent(html_8caf0de83fcbb39ff2cc3277b7180c2b);
+            
+        
+
+        marker_d66c6158c445193ba7fd3f20b8d3bdef.bindPopup(popup_54a57876169b6841649374e799c9fe5d)
+        ;
+
+        
+    
+    
+            var marker_205633f724ba3d6a4bee3b88abbd5aca = L.marker(
+                [-40.02194732087686, 129.4682020385058],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_7acc242632e693c386ef50e3dd44bd55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_205633f724ba3d6a4bee3b88abbd5aca.setIcon(icon_7acc242632e693c386ef50e3dd44bd55);
+        
+    
+        var popup_f57c7097fc31330630998f615414d778 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b17b0939bf9512d10892c9805128aaaa = $(`<div id="html_b17b0939bf9512d10892c9805128aaaa" style="width: 100.0%; height: 100.0%;"><strong>Mount Olympus</strong><br>Type: Mount<br>Dimension: Replacement Dimension<br>Characters: None</div>`)[0];
+                popup_f57c7097fc31330630998f615414d778.setContent(html_b17b0939bf9512d10892c9805128aaaa);
+            
+        
+
+        marker_205633f724ba3d6a4bee3b88abbd5aca.bindPopup(popup_f57c7097fc31330630998f615414d778)
+        ;
+
+        
+    
+    
+            var marker_a35cc4a3ba7fdacd40bff8f9b1cc623f = L.marker(
+                [-89.21112008393023, 10.236851426713969],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_fdd6b6582b6ba2957fea586b759ada24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a35cc4a3ba7fdacd40bff8f9b1cc623f.setIcon(icon_fdd6b6582b6ba2957fea586b759ada24);
+        
+    
+        var popup_6c614ef949e0b96309e41c4e86da8154 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a053107fce127b6736673fb45a38e578 = $(`<div id="html_a053107fce127b6736673fb45a38e578" style="width: 100.0%; height: 100.0%;"><strong>Plitzville Montana</strong><br>Type: Woods<br>Dimension: Replacement Dimension<br>Characters: None</div>`)[0];
+                popup_6c614ef949e0b96309e41c4e86da8154.setContent(html_a053107fce127b6736673fb45a38e578);
+            
+        
+
+        marker_a35cc4a3ba7fdacd40bff8f9b1cc623f.bindPopup(popup_6c614ef949e0b96309e41c4e86da8154)
+        ;
+
+        
+    
+    
+            var marker_e014757d07e4acdf0b42347d6653d018 = L.marker(
+                [88.86194219018498, 51.57929513639539],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_93dd9094b4ccf9d6da13aeec1f807451 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e014757d07e4acdf0b42347d6653d018.setIcon(icon_93dd9094b4ccf9d6da13aeec1f807451);
+        
+    
+        var popup_68b3968520432c016c495c51301c5b12 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e84a7451cb348662e21f9978f51b4072 = $(`<div id="html_e84a7451cb348662e21f9978f51b4072" style="width: 100.0%; height: 100.0%;"><strong>Earth (Tusk Dimension)</strong><br>Type: Planet<br>Dimension: Tusk Dimension<br>Characters: None</div>`)[0];
+                popup_68b3968520432c016c495c51301c5b12.setContent(html_e84a7451cb348662e21f9978f51b4072);
+            
+        
+
+        marker_e014757d07e4acdf0b42347d6653d018.bindPopup(popup_68b3968520432c016c495c51301c5b12)
+        ;
+
+        
+    
+    
+            var marker_128ae07cb9e59ab58bf8ea8f6fdcf9ba = L.marker(
+                [-26.879148794696334, -113.33996083715346],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_bb1d84eb3d0c7f4dbdbc1981a248b92a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_128ae07cb9e59ab58bf8ea8f6fdcf9ba.setIcon(icon_bb1d84eb3d0c7f4dbdbc1981a248b92a);
+        
+    
+        var popup_70bdfc75073f9a2350c49445621d29f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_198f97025cc39b6bacf1c19591089acb = $(`<div id="html_198f97025cc39b6bacf1c19591089acb" style="width: 100.0%; height: 100.0%;"><strong>Gramuflack</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: Gramuflackian Anchorman, Gramuflackian General</div>`)[0];
+                popup_70bdfc75073f9a2350c49445621d29f5.setContent(html_198f97025cc39b6bacf1c19591089acb);
+            
+        
+
+        marker_128ae07cb9e59ab58bf8ea8f6fdcf9ba.bindPopup(popup_70bdfc75073f9a2350c49445621d29f5)
+        ;
+
+        
+    
+    
+            var marker_2abb2813eaa26f66230a8bbdaf571e63 = L.marker(
+                [15.204376459344942, 25.383315321281344],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_db655c841367492ff70447d36637340b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2abb2813eaa26f66230a8bbdaf571e63.setIcon(icon_db655c841367492ff70447d36637340b);
+        
+    
+        var popup_d42a0cdd6a568ab8913a7803eb90a72e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24e8363c893b0bb497ce13d876a2f8d5 = $(`<div id="html_24e8363c893b0bb497ce13d876a2f8d5" style="width: 100.0%; height: 100.0%;"><strong>Draygon</strong><br>Type: Planet<br>Dimension: Magic Dimension<br>Characters: The Wizard, Debrah, Debrah’s Partner, Michael, Slut Dragon, Shadow Jacker</div>`)[0];
+                popup_d42a0cdd6a568ab8913a7803eb90a72e.setContent(html_24e8363c893b0bb497ce13d876a2f8d5);
+            
+        
+
+        marker_2abb2813eaa26f66230a8bbdaf571e63.bindPopup(popup_d42a0cdd6a568ab8913a7803eb90a72e)
+        ;
+
+        
+    
+    
+            var marker_85d82d4ebe97dd54d9a0c1b2ce4c3f1a = L.marker(
+                [29.30834962761331, -68.52558239236889],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_d3b371256820e56b92400de0d8a97aed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_85d82d4ebe97dd54d9a0c1b2ce4c3f1a.setIcon(icon_d3b371256820e56b92400de0d8a97aed);
+        
+    
+        var popup_6ea34fb745b9502dadf345b637162e77 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0424b684bf19cb5c6fed69134fae6a04 = $(`<div id="html_0424b684bf19cb5c6fed69134fae6a04" style="width: 100.0%; height: 100.0%;"><strong>New Improved Galactic Federation Quarters</strong><br>Type: Space station<br>Dimension: Replacement Dimension<br>Characters: None</div>`)[0];
+                popup_6ea34fb745b9502dadf345b637162e77.setContent(html_0424b684bf19cb5c6fed69134fae6a04);
+            
+        
+
+        marker_85d82d4ebe97dd54d9a0c1b2ce4c3f1a.bindPopup(popup_6ea34fb745b9502dadf345b637162e77)
+        ;
+
+        
+    
+    
+            var marker_5612d874558f364ae1e547b9d00d9a73 = L.marker(
+                [28.854947711994882, -95.98330351081682],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_216667e763b310f36eb035a3e5411189 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5612d874558f364ae1e547b9d00d9a73.setIcon(icon_216667e763b310f36eb035a3e5411189);
+        
+    
+        var popup_237466f0278f67af3ad7086251bd441e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3bc5134c2b827d62bf82232f04ac1fd7 = $(`<div id="html_3bc5134c2b827d62bf82232f04ac1fd7" style="width: 100.0%; height: 100.0%;"><strong>Story Train</strong><br>Type: Diegesis<br>Dimension: Replacement Dimension<br>Characters: Abradolf Lincler, Biblesaurus, Birdperson, Cats Fan, Christmas Storyteller, Goomby, Hairspray Fan, Leah, Marcus, Musical Fan, Phantom of the Opera Fan, Phoenixperson, Private Smith, Professor Sanchez, Ramamama Lord, Sarge, Shrek The Musical Fan, Snuffles, Tammy Guetermann, The Concept of Time, Morty Smith, Rick Sanchez, Train Cop, Train Cops, Train Cops Instructor, Morty’s Disguise, Rick’s Disguise</div>`)[0];
+                popup_237466f0278f67af3ad7086251bd441e.setContent(html_3bc5134c2b827d62bf82232f04ac1fd7);
+            
+        
+
+        marker_5612d874558f364ae1e547b9d00d9a73.bindPopup(popup_237466f0278f67af3ad7086251bd441e)
+        ;
+
+        
+    
+    
+            var marker_e2e57055bb7ffe8a29d5743d5647f934 = L.marker(
+                [-8.783258043848278, 13.374270996963475],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_24a45dae4f328af31848c82844d50cff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e2e57055bb7ffe8a29d5743d5647f934.setIcon(icon_24a45dae4f328af31848c82844d50cff);
+        
+    
+        var popup_6da2521557bd5354a94933908616dec1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f86870708a982daf99f4715456cad98 = $(`<div id="html_0f86870708a982daf99f4715456cad98" style="width: 100.0%; height: 100.0%;"><strong>Non-Diegetic Alternative Reality</strong><br>Type: Non-Diegetic Alternative Reality<br>Dimension: Replacement Dimension<br>Characters: Tickets Please Guy</div>`)[0];
+                popup_6da2521557bd5354a94933908616dec1.setContent(html_0f86870708a982daf99f4715456cad98);
+            
+        
+
+        marker_e2e57055bb7ffe8a29d5743d5647f934.bindPopup(popup_6da2521557bd5354a94933908616dec1)
+        ;
+
+        
+    
+    
+            var marker_d32c73536f2d0c2ea87cf1c4c27f67f6 = L.marker(
+                [58.84960770446409, -144.28890830240286],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_c36a626a0b5f0d89a88a0139211443e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d32c73536f2d0c2ea87cf1c4c27f67f6.setIcon(icon_c36a626a0b5f0d89a88a0139211443e2);
+        
+    
+        var popup_c7053e06656ef955a6882026a97f82d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79c93aa0585ec59e012c5fadefd1c87f = $(`<div id="html_79c93aa0585ec59e012c5fadefd1c87f" style="width: 100.0%; height: 100.0%;"><strong>Tickets Please Guy Nightmare</strong><br>Type: Nightmare<br>Dimension: Replacement Dimension<br>Characters: Floaty Bloody Man, Floaty Non-Gasm Brotherhood Member, Floaty Non-Gasm Brotherhood Member Friend, Floaty Bloody Man’s Daughter, Josh, Josh's Sister, Uncle Nibbles</div>`)[0];
+                popup_c7053e06656ef955a6882026a97f82d2.setContent(html_79c93aa0585ec59e012c5fadefd1c87f);
+            
+        
+
+        marker_d32c73536f2d0c2ea87cf1c4c27f67f6.bindPopup(popup_c7053e06656ef955a6882026a97f82d2)
+        ;
+
+        
+    
+    
+            var marker_a98c96e0aded5cc9fe572fbc7ffc73eb = L.marker(
+                [-57.170589790822014, 140.99274689083984],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_8c31ba412ce52d826af7c7567ce7d7cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a98c96e0aded5cc9fe572fbc7ffc73eb.setIcon(icon_8c31ba412ce52d826af7c7567ce7d7cd);
+        
+    
+        var popup_d27db1e09a8d04994d9d263cf49a7355 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe05edf7f6437a073b5196ea3c52e9f8 = $(`<div id="html_fe05edf7f6437a073b5196ea3c52e9f8" style="width: 100.0%; height: 100.0%;"><strong>Morty’s Story</strong><br>Type: Diegesis<br>Dimension: Replacement Dimension<br>Characters: Cookies Guy, Female Scorpion, Mike Johnson, Beth Smith, Summer Smith, Ruth Bader Ginsburg</div>`)[0];
+                popup_d27db1e09a8d04994d9d263cf49a7355.setContent(html_fe05edf7f6437a073b5196ea3c52e9f8);
+            
+        
+
+        marker_a98c96e0aded5cc9fe572fbc7ffc73eb.bindPopup(popup_d27db1e09a8d04994d9d263cf49a7355)
+        ;
+
+        
+    
+    
+            var marker_f546c807880e71a9bc6a16548cb0d789 = L.marker(
+                [63.461684590599305, 68.7343284916598],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_f0f682aebde37e4abdc0916c66056ca8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f546c807880e71a9bc6a16548cb0d789.setIcon(icon_f0f682aebde37e4abdc0916c66056ca8);
+        
+    
+        var popup_604bd2b14bcb670926183313ca6a4a7b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_30ed0ca2ef613baf377fcbceb79fda0a = $(`<div id="html_30ed0ca2ef613baf377fcbceb79fda0a" style="width: 100.0%; height: 100.0%;"><strong>Ricks’s Story</strong><br>Type: Diegesis<br>Dimension: Replacement Dimension<br>Characters: Crossy, Mr. Celery & Friends, Storylord, Darth Poopybutthole, Evil Morty, Jesus Christ</div>`)[0];
+                popup_604bd2b14bcb670926183313ca6a4a7b.setContent(html_30ed0ca2ef613baf377fcbceb79fda0a);
+            
+        
+
+        marker_f546c807880e71a9bc6a16548cb0d789.bindPopup(popup_604bd2b14bcb670926183313ca6a4a7b)
+        ;
+
+        
+    
+    
+            var marker_4cd82e979be01c3a5d78e98ec8a6be5b = L.marker(
+                [29.06012213897543, -59.80803099008402],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_701ed97cdcb32fdcdf72264f264f56a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4cd82e979be01c3a5d78e98ec8a6be5b.setIcon(icon_701ed97cdcb32fdcdf72264f264f56a0);
+        
+    
+        var popup_cdcbab46e5d0f9168936252b940f3997 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25b159f3172697036a74addedc7786e1 = $(`<div id="html_25b159f3172697036a74addedc7786e1" style="width: 100.0%; height: 100.0%;"><strong>Glorzo Asteroid</strong><br>Type: Asteroid<br>Dimension: Replacement Dimension<br>Characters: Angry Glorzo, Bruce, Council of Glorzos Member, Council of Glorzos Member, Old Glorzo, Shane, Steve, Troy</div>`)[0];
+                popup_cdcbab46e5d0f9168936252b940f3997.setContent(html_25b159f3172697036a74addedc7786e1);
+            
+        
+
+        marker_4cd82e979be01c3a5d78e98ec8a6be5b.bindPopup(popup_cdcbab46e5d0f9168936252b940f3997)
+        ;
+
+        
+    
+    
+            var marker_69eb522b786557b3e246f0d3b86f9048 = L.marker(
+                [-59.76381078880421, -135.3071786150953],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_9bfa19d170d628989f388c7a22145179 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_69eb522b786557b3e246f0d3b86f9048.setIcon(icon_9bfa19d170d628989f388c7a22145179);
+        
+    
+        var popup_7afbe3613324927802d497d3462b216c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_04f09154d434a1c287f9d9958b181082 = $(`<div id="html_04f09154d434a1c287f9d9958b181082" style="width: 100.0%; height: 100.0%;"><strong>Alien Acid Plant</strong><br>Type: Acid Plant<br>Dimension: Replacement Dimension<br>Characters: Crystal Dealers Boss, Crystal Dealer, Crystal Dealer, Crystal Dealer</div>`)[0];
+                popup_7afbe3613324927802d497d3462b216c.setContent(html_04f09154d434a1c287f9d9958b181082);
+            
+        
+
+        marker_69eb522b786557b3e246f0d3b86f9048.bindPopup(popup_7afbe3613324927802d497d3462b216c)
+        ;
+
+        
+    
+    
+            var marker_b5426ddb0204ed2fa211bc5de2068403 = L.marker(
+                [-51.797248866459284, 159.70156417119097],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_5059bc27b7f33ce776ba373e8e261973 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b5426ddb0204ed2fa211bc5de2068403.setIcon(icon_5059bc27b7f33ce776ba373e8e261973);
+        
+    
+        var popup_13a4ccad82c65abef061b9d24f7ac5a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d5f762833113e7d0810f5b4999418ba = $(`<div id="html_4d5f762833113e7d0810f5b4999418ba" style="width: 100.0%; height: 100.0%;"><strong>Merged Universe</strong><br>Type: Dimension<br>Dimension: Merged Dimension<br>Characters: SWAT Officer, Impervious to Acid SWAT Officer, Johnny Carson, Sonia Sotomayor, Morty’s Girlfriend, Heroine Keith</div>`)[0];
+                popup_13a4ccad82c65abef061b9d24f7ac5a5.setContent(html_4d5f762833113e7d0810f5b4999418ba);
+            
+        
+
+        marker_b5426ddb0204ed2fa211bc5de2068403.bindPopup(popup_13a4ccad82c65abef061b9d24f7ac5a5)
+        ;
+
+        
+    
+    
+            var marker_72cf37025ec42e24ad159725b9065e43 = L.marker(
+                [19.190258352643895, -79.55736923456685],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_9a931a81e2842c61335f0c12e129d53f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_72cf37025ec42e24ad159725b9065e43.setIcon(icon_9a931a81e2842c61335f0c12e129d53f);
+        
+    
+        var popup_0d0775188d678ab536304586b7063257 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eea89dd4107fdc26ec760bd2aa0fa851 = $(`<div id="html_eea89dd4107fdc26ec760bd2aa0fa851" style="width: 100.0%; height: 100.0%;"><strong>Near-Duplicate Reality</strong><br>Type: Reality<br>Dimension: Unknown dimension<br>Characters: Plane Crash Survivor, Plane Crash Survivor, Morty’s Father-in-law, Morty’s Mother-in-law</div>`)[0];
+                popup_0d0775188d678ab536304586b7063257.setContent(html_eea89dd4107fdc26ec760bd2aa0fa851);
+            
+        
+
+        marker_72cf37025ec42e24ad159725b9065e43.bindPopup(popup_0d0775188d678ab536304586b7063257)
+        ;
+
+        
+    
+    
+            var marker_079ca6867b199a42c404998cd28233df = L.marker(
+                [2.322429698558352, 75.45721070692468],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_138273ab96a115b35204c360e154bd83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_079ca6867b199a42c404998cd28233df.setIcon(icon_138273ab96a115b35204c360e154bd83);
+        
+    
+        var popup_fbca9b919cd163ac634b22e5d748f1c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_070dc63be282c0388400e204c2fc90c0 = $(`<div id="html_070dc63be282c0388400e204c2fc90c0" style="width: 100.0%; height: 100.0%;"><strong>NX-5 Planet Remover</strong><br>Type: Death Star<br>Dimension: Replacement Dimension<br>Characters: Tammy Guetermann, New Improved Galactic Federation Guard, New Improved Galactic Federation Guard</div>`)[0];
+                popup_fbca9b919cd163ac634b22e5d748f1c8.setContent(html_070dc63be282c0388400e204c2fc90c0);
+            
+        
+
+        marker_079ca6867b199a42c404998cd28233df.bindPopup(popup_fbca9b919cd163ac634b22e5d748f1c8)
+        ;
+
+        
+    
+    
+            var marker_f1983d881baadfc3016ffb4139d77996 = L.marker(
+                [-26.154031991668752, 2.947115293166064],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_37fea30ac9daee99c1213a8c1427cc2d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f1983d881baadfc3016ffb4139d77996.setIcon(icon_37fea30ac9daee99c1213a8c1427cc2d);
+        
+    
+        var popup_3e1c02c5dfbc58c7fee746a549d7d4bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e29a7c4ecd04e8e552de9b1d477090bb = $(`<div id="html_e29a7c4ecd04e8e552de9b1d477090bb" style="width: 100.0%; height: 100.0%;"><strong>Gaia</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: Gaia, Reggie, Ticktock, Florflock, Squeeb</div>`)[0];
+                popup_3e1c02c5dfbc58c7fee746a549d7d4bc.setContent(html_e29a7c4ecd04e8e552de9b1d477090bb);
+            
+        
+
+        marker_f1983d881baadfc3016ffb4139d77996.bindPopup(popup_3e1c02c5dfbc58c7fee746a549d7d4bc)
+        ;
+
+        
+    
+    
+            var marker_694f5f99c4346a59947eeb8e54ad2d88 = L.marker(
+                [27.192038305613906, -47.03334128923913],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_2559e39e3c4a41ba69a7ab1f7e44ec35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_694f5f99c4346a59947eeb8e54ad2d88.setIcon(icon_2559e39e3c4a41ba69a7ab1f7e44ec35);
+        
+    
+        var popup_9b9ed48b1f416076ea91da16b01392f8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb431ea871547dfff10a8035191a27db = $(`<div id="html_eb431ea871547dfff10a8035191a27db" style="width: 100.0%; height: 100.0%;"><strong>Defiance's Ship</strong><br>Type: Spacecraft<br>Dimension: Replacement Dimension<br>Characters: Defiance Squanchette</div>`)[0];
+                popup_9b9ed48b1f416076ea91da16b01392f8.setContent(html_eb431ea871547dfff10a8035191a27db);
+            
+        
+
+        marker_694f5f99c4346a59947eeb8e54ad2d88.bindPopup(popup_9b9ed48b1f416076ea91da16b01392f8)
+        ;
+
+        
+    
+    
+            var marker_760c704b2a8aa6ae4368270771cdb335 = L.marker(
+                [6.583811735802541, 16.575244300011775],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_65c66d5eba5fdb3707dadd111f71c634 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_760c704b2a8aa6ae4368270771cdb335.setIcon(icon_65c66d5eba5fdb3707dadd111f71c634);
+        
+    
+        var popup_6ec345fe9f19ba1e7e9459799a63d914 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_438d4dd5d93650f2be12d2e207b40053 = $(`<div id="html_438d4dd5d93650f2be12d2e207b40053" style="width: 100.0%; height: 100.0%;"><strong>Defiance's Base</strong><br>Type: Base<br>Dimension: Replacement Dimension<br>Characters: Defiance Doctor</div>`)[0];
+                popup_6ec345fe9f19ba1e7e9459799a63d914.setContent(html_438d4dd5d93650f2be12d2e207b40053);
+            
+        
+
+        marker_760c704b2a8aa6ae4368270771cdb335.bindPopup(popup_6ec345fe9f19ba1e7e9459799a63d914)
+        ;
+
+        
+    
+    
+            var marker_51e11af20bf2795ab431db2967d0499d = L.marker(
+                [1.213810745319634, 145.5832953290374],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_dae1057746a6f3e17258dbd1f0db2aa9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_51e11af20bf2795ab431db2967d0499d.setIcon(icon_dae1057746a6f3e17258dbd1f0db2aa9);
+        
+    
+        var popup_a2a66cced77fef719d6900bc2d42601a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ef94d59d88739c054b002d641f3a1960 = $(`<div id="html_ef94d59d88739c054b002d641f3a1960" style="width: 100.0%; height: 100.0%;"><strong>The Ocean</strong><br>Type: Liquid<br>Dimension: Replacement Dimension<br>Characters: None</div>`)[0];
+                popup_a2a66cced77fef719d6900bc2d42601a.setContent(html_ef94d59d88739c054b002d641f3a1960);
+            
+        
+
+        marker_51e11af20bf2795ab431db2967d0499d.bindPopup(popup_a2a66cced77fef719d6900bc2d42601a)
+        ;
+
+        
+    
+    
+            var marker_2e7260d0153920b4524668fc7d734030 = L.marker(
+                [8.299087131471836, -67.17893677982372],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_e2768cdb5b1d713b17243aa79fa49bc1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2e7260d0153920b4524668fc7d734030.setIcon(icon_e2768cdb5b1d713b17243aa79fa49bc1);
+        
+    
+        var popup_375b7200e79603752b81dc5390edb66b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd2e0c6afb9ec89c9f49c6979ca14351 = $(`<div id="html_fd2e0c6afb9ec89c9f49c6979ca14351" style="width: 100.0%; height: 100.0%;"><strong>Narnia Dimension</strong><br>Type: Dimension<br>Dimension: Fantasy Dimension<br>Characters: Hoovy, Bova, Japheth, Japheth's Middle Son, Japheth's Eldest Son, Japheth's Youngest Son, Japheth's Grandson, Adam's Mother, Warlock, Evolved Narnian, Evolved Narnian Disguised as Morty</div>`)[0];
+                popup_375b7200e79603752b81dc5390edb66b.setContent(html_fd2e0c6afb9ec89c9f49c6979ca14351);
+            
+        
+
+        marker_2e7260d0153920b4524668fc7d734030.bindPopup(popup_375b7200e79603752b81dc5390edb66b)
+        ;
+
+        
+    
+    
+            var marker_8bafbea8b993a86be9fc28962c8745af = L.marker(
+                [-18.834722498765345, -132.05465953819018],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_a040dffce664a34864ef51ca51089724 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8bafbea8b993a86be9fc28962c8745af.setIcon(icon_a040dffce664a34864ef51ca51089724);
+        
+    
+        var popup_c21ded9d2c128d9411e8f116414b2baa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b07846918136f059ece63e45b17d0ed = $(`<div id="html_3b07846918136f059ece63e45b17d0ed" style="width: 100.0%; height: 100.0%;"><strong>Elemental Rings</strong><br>Type: Elemental Rings<br>Dimension: Replacement Dimension<br>Characters: None</div>`)[0];
+                popup_c21ded9d2c128d9411e8f116414b2baa.setContent(html_3b07846918136f059ece63e45b17d0ed);
+            
+        
+
+        marker_8bafbea8b993a86be9fc28962c8745af.bindPopup(popup_c21ded9d2c128d9411e8f116414b2baa)
+        ;
+
+        
+    
+    
+            var marker_551d7ee7a58b924f330ff409800a66d7 = L.marker(
+                [-88.61313626757281, -51.891265567815594],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_d293652b42148f907c6ae532877d8851 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_551d7ee7a58b924f330ff409800a66d7.setIcon(icon_d293652b42148f907c6ae532877d8851);
+        
+    
+        var popup_fd73045647a1c558e9bd141eb7f035cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2abb58b440f4edd1ff869d120dcb1ab = $(`<div id="html_d2abb58b440f4edd1ff869d120dcb1ab" style="width: 100.0%; height: 100.0%;"><strong>Morglutz</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: Morglutzian</div>`)[0];
+                popup_fd73045647a1c558e9bd141eb7f035cb.setContent(html_d2abb58b440f4edd1ff869d120dcb1ab);
+            
+        
+
+        marker_551d7ee7a58b924f330ff409800a66d7.bindPopup(popup_fd73045647a1c558e9bd141eb7f035cb)
+        ;
+
+        
+    
+    
+            var marker_f6a83a056a5484ca22a9efa9f63732c2 = L.marker(
+                [-37.09559566690959, 41.75456565005851],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_e2d93e7c794af4be0cb97ba3574142dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f6a83a056a5484ca22a9efa9f63732c2.setIcon(icon_e2d93e7c794af4be0cb97ba3574142dc);
+        
+    
+        var popup_2cc2fbfc5353de08337634d77357240c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d331e88557a6f42228f1806225e63258 = $(`<div id="html_d331e88557a6f42228f1806225e63258" style="width: 100.0%; height: 100.0%;"><strong>Ferkus 9</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: Daphne, Ferkusian</div>`)[0];
+                popup_2cc2fbfc5353de08337634d77357240c.setContent(html_d331e88557a6f42228f1806225e63258);
+            
+        
+
+        marker_f6a83a056a5484ca22a9efa9f63732c2.bindPopup(popup_2cc2fbfc5353de08337634d77357240c)
+        ;
+
+        
+    
+    
+            var marker_11fcfe33d7c63e2ca93689f6df2ef6fc = L.marker(
+                [-2.8917387779993504, 14.468071377727028],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_b156142e3e0ea23ed4384f0a9b0911ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_11fcfe33d7c63e2ca93689f6df2ef6fc.setIcon(icon_b156142e3e0ea23ed4384f0a9b0911ad);
+        
+    
+        var popup_3b95fffc36c6db3ec1caaf8a42d86042 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_52cf95a77ca0745e16e4cdbe4f67e75d = $(`<div id="html_52cf95a77ca0745e16e4cdbe4f67e75d" style="width: 100.0%; height: 100.0%;"><strong>Morty</strong><br>Type: Human<br>Dimension: Replacement Dimension<br>Characters: None</div>`)[0];
+                popup_3b95fffc36c6db3ec1caaf8a42d86042.setContent(html_52cf95a77ca0745e16e4cdbe4f67e75d);
+            
+        
+
+        marker_11fcfe33d7c63e2ca93689f6df2ef6fc.bindPopup(popup_3b95fffc36c6db3ec1caaf8a42d86042)
+        ;
+
+        
+    
+    
+            var marker_8263be6f17233806a558a5840f007313 = L.marker(
+                [19.517558349999263, -99.3215616205511],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_aaaf895dc513f4ebead72bbab30d7101 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8263be6f17233806a558a5840f007313.setIcon(icon_aaaf895dc513f4ebead72bbab30d7101);
+        
+    
+        var popup_b49e9df23a1e0af3c3b9fcb39813cca5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab65afe8b81713132cfd021e5cc7694d = $(`<div id="html_ab65afe8b81713132cfd021e5cc7694d" style="width: 100.0%; height: 100.0%;"><strong>Space</strong><br>Type: Space<br>Dimension: Replacement Dimension<br>Characters: Naruto Smith, Spaceman</div>`)[0];
+                popup_b49e9df23a1e0af3c3b9fcb39813cca5.setContent(html_ab65afe8b81713132cfd021e5cc7694d);
+            
+        
+
+        marker_8263be6f17233806a558a5840f007313.bindPopup(popup_b49e9df23a1e0af3c3b9fcb39813cca5)
+        ;
+
+        
+    
+    
+            var marker_dae78def51a65e89b3d455064e6328f7 = L.marker(
+                [-55.69693846662102, 138.00044568832237],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_d59a95c7fd75a84b068ed3eb6b769ae9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_dae78def51a65e89b3d455064e6328f7.setIcon(icon_d59a95c7fd75a84b068ed3eb6b769ae9);
+        
+    
+        var popup_f2ab8a1a95b0e8a904d56d91d64066ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_07ea5c08f10a5e8ca3dac836fbdd3d91 = $(`<div id="html_07ea5c08f10a5e8ca3dac836fbdd3d91" style="width: 100.0%; height: 100.0%;"><strong>Hell</strong><br>Type: Hell<br>Dimension: Replacement Dimension<br>Characters: Cenobite, Cenobite, Cenobite, Cenobite, Cenobite, Coat Rack Head, Mousetrap Nipples</div>`)[0];
+                popup_f2ab8a1a95b0e8a904d56d91d64066ed.setContent(html_07ea5c08f10a5e8ca3dac836fbdd3d91);
+            
+        
+
+        marker_dae78def51a65e89b3d455064e6328f7.bindPopup(popup_f2ab8a1a95b0e8a904d56d91d64066ed)
+        ;
+
+        
+    
+    
+            var marker_7c10ac4d881b2be31176df53cd23a5f2 = L.marker(
+                [-20.677206182809428, 120.36940716017477],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_4c25967202a8ac14f0f96274c8833ab9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7c10ac4d881b2be31176df53cd23a5f2.setIcon(icon_4c25967202a8ac14f0f96274c8833ab9);
+        
+    
+        var popup_7bb2342b934f42e165708b8d6807a49a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db1b5b36be50cdd606ae64552fb5bc43 = $(`<div id="html_db1b5b36be50cdd606ae64552fb5bc43" style="width: 100.0%; height: 100.0%;"><strong>Z. Q. P. D.</strong><br>Type: Police Department<br>Dimension: Replacement Dimension<br>Characters: Alyson Hannigan</div>`)[0];
+                popup_7bb2342b934f42e165708b8d6807a49a.setContent(html_db1b5b36be50cdd606ae64552fb5bc43);
+            
+        
+
+        marker_7c10ac4d881b2be31176df53cd23a5f2.bindPopup(popup_7bb2342b934f42e165708b8d6807a49a)
+        ;
+
+        
+    
+    
+            var marker_5b4b051b43be3546f4cd576b037e8fab = L.marker(
+                [-57.58613441106534, 112.08702193920732],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_f82afd8c0077f40d3c52f038311da171 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5b4b051b43be3546f4cd576b037e8fab.setIcon(icon_f82afd8c0077f40d3c52f038311da171);
+        
+    
+        var popup_5811d19a71163b69c3758aad993eac77 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_924b8ae9fe221a94d2f28c1deb214220 = $(`<div id="html_924b8ae9fe221a94d2f28c1deb214220" style="width: 100.0%; height: 100.0%;"><strong>Space Tahoe</strong><br>Type: <br>Dimension: Replacement Dimension<br>Characters: Changeformer, Changeformer</div>`)[0];
+                popup_5811d19a71163b69c3758aad993eac77.setContent(html_924b8ae9fe221a94d2f28c1deb214220);
+            
+        
+
+        marker_5b4b051b43be3546f4cd576b037e8fab.bindPopup(popup_5811d19a71163b69c3758aad993eac77)
+        ;
+
+        
+    
+    
+            var marker_7f6b0f1f0fb6da922b9e80ace734df1e = L.marker(
+                [29.541598443710058, 94.1131442068774],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_57069f48ceecb83f36e3b67777dfc5dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7f6b0f1f0fb6da922b9e80ace734df1e.setIcon(icon_57069f48ceecb83f36e3b67777dfc5dd);
+        
+    
+        var popup_639a10e634d174bce78bb8339a8e1a63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_715f437d36675ce1737f697aacd50390 = $(`<div id="html_715f437d36675ce1737f697aacd50390" style="width: 100.0%; height: 100.0%;"><strong>France</strong><br>Type: Country<br>Dimension: Replacement Dimension<br>Characters: None</div>`)[0];
+                popup_639a10e634d174bce78bb8339a8e1a63.setContent(html_715f437d36675ce1737f697aacd50390);
+            
+        
+
+        marker_7f6b0f1f0fb6da922b9e80ace734df1e.bindPopup(popup_639a10e634d174bce78bb8339a8e1a63)
+        ;
+
+        
+    
+    
+            var marker_dcd6ddf5bc053aef9ac29508194a2464 = L.marker(
+                [-76.1494272465938, 40.15707291487453],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_63a7d44cca36aefa6a7d3c11014ad2de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_dcd6ddf5bc053aef9ac29508194a2464.setIcon(icon_63a7d44cca36aefa6a7d3c11014ad2de);
+        
+    
+        var popup_234052dd65b82b30ae3070587250be83 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b0120bad1a21d49789c21a318b035aee = $(`<div id="html_b0120bad1a21d49789c21a318b035aee" style="width: 100.0%; height: 100.0%;"><strong>Birdperson's Consciousness</strong><br>Type: Consciousness<br>Dimension: Replacement Dimension<br>Characters: Memory Tammy, Memory Squanchy, Memory Rick, Memory Rick, Memory Geardude</div>`)[0];
+                popup_234052dd65b82b30ae3070587250be83.setContent(html_b0120bad1a21d49789c21a318b035aee);
+            
+        
+
+        marker_dcd6ddf5bc053aef9ac29508194a2464.bindPopup(popup_234052dd65b82b30ae3070587250be83)
+        ;
+
+        
+    
+    
+            var marker_d43464c8f3915424cc1e2fcdade9e6ff = L.marker(
+                [55.49529116006636, 34.17929579476217],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_47413566e0f60b1d588e6ffe6b5d898c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d43464c8f3915424cc1e2fcdade9e6ff.setIcon(icon_47413566e0f60b1d588e6ffe6b5d898c);
+        
+    
+        var popup_c6cbfec1e65852fcf705dde285c9b938 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f0f0acb84f95320d34521b3bedd3d556 = $(`<div id="html_f0f0acb84f95320d34521b3bedd3d556" style="width: 100.0%; height: 100.0%;"><strong>Rick's Consciousness</strong><br>Type: Consciousness<br>Dimension: Replacement Dimension<br>Characters: None</div>`)[0];
+                popup_c6cbfec1e65852fcf705dde285c9b938.setContent(html_f0f0acb84f95320d34521b3bedd3d556);
+            
+        
+
+        marker_d43464c8f3915424cc1e2fcdade9e6ff.bindPopup(popup_c6cbfec1e65852fcf705dde285c9b938)
+        ;
+
+        
+    
+    
+            var marker_714c90a671f3ab7466c9866b57ac4f9c = L.marker(
+                [-24.864508682001443, -90.12193874494233],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_d24daf634277380cc536d1de618fde98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_714c90a671f3ab7466c9866b57ac4f9c.setIcon(icon_d24daf634277380cc536d1de618fde98);
+        
+    
+        var popup_2316047d335e02fd03ae1eb71744f69f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8f530763ae69e0070f701c8527d6986f = $(`<div id="html_8f530763ae69e0070f701c8527d6986f" style="width: 100.0%; height: 100.0%;"><strong>Avian Planet</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: Alien Crow, Alien Crow</div>`)[0];
+                popup_2316047d335e02fd03ae1eb71744f69f.setContent(html_8f530763ae69e0070f701c8527d6986f);
+            
+        
+
+        marker_714c90a671f3ab7466c9866b57ac4f9c.bindPopup(popup_2316047d335e02fd03ae1eb71744f69f)
+        ;
+
+        
+    
+    
+            var marker_4522b3598d8e54d1df8f5f87f63e876c = L.marker(
+                [-64.71436093440826, -9.863169509165516],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_a6c776086cc2959d85e9b7af62663d92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4522b3598d8e54d1df8f5f87f63e876c.setIcon(icon_a6c776086cc2959d85e9b7af62663d92);
+        
+    
+        var popup_fc7cb02a2d6bc48d75fb1aeed6dd34c9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c67cc1e8837b9f28b7901637e3f9ef85 = $(`<div id="html_c67cc1e8837b9f28b7901637e3f9ef85" style="width: 100.0%; height: 100.0%;"><strong>Normal Size Bug Dimension</strong><br>Type: Dimension<br>Dimension: <br>Characters: Palicki, Sarge</div>`)[0];
+                popup_fc7cb02a2d6bc48d75fb1aeed6dd34c9.setContent(html_c67cc1e8837b9f28b7901637e3f9ef85);
+            
+        
+
+        marker_4522b3598d8e54d1df8f5f87f63e876c.bindPopup(popup_fc7cb02a2d6bc48d75fb1aeed6dd34c9)
+        ;
+
+        
+    
+    
+            var marker_e7c12d509a6cac20989bc3ba33cb4527 = L.marker(
+                [-35.90600361486886, -122.29810568914112],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_3ade085dfd6a609e23fe167843199f50 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e7c12d509a6cac20989bc3ba33cb4527.setIcon(icon_3ade085dfd6a609e23fe167843199f50);
+        
+    
+        var popup_12f8668788550c54dd88c91606c32e49 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c27ec5e470c9cc6bf53551af4283ba18 = $(`<div id="html_c27ec5e470c9cc6bf53551af4283ba18" style="width: 100.0%; height: 100.0%;"><strong>Slartivart</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: Slartivartian</div>`)[0];
+                popup_12f8668788550c54dd88c91606c32e49.setContent(html_c27ec5e470c9cc6bf53551af4283ba18);
+            
+        
+
+        marker_e7c12d509a6cac20989bc3ba33cb4527.bindPopup(popup_12f8668788550c54dd88c91606c32e49)
+        ;
+
+        
+    
+    
+            var marker_46ba5c5bfe7f9c99fac3c5f55692fffb = L.marker(
+                [47.07584835228266, 72.76614893243294],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_e1db6abfc3541bee66d13dec20fd3fdd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_46ba5c5bfe7f9c99fac3c5f55692fffb.setIcon(icon_e1db6abfc3541bee66d13dec20fd3fdd);
+        
+    
+        var popup_42b46b9dbb72a76aa0e39464417bca53 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_005a6d3bb544b6f23a14bbd18fcf815e = $(`<div id="html_005a6d3bb544b6f23a14bbd18fcf815e" style="width: 100.0%; height: 100.0%;"><strong>Rick and Two Crows Planet</strong><br>Type: Planet<br>Dimension: Replacement Dimension<br>Characters: Pussifer, Crow Scare, Two Crows</div>`)[0];
+                popup_42b46b9dbb72a76aa0e39464417bca53.setContent(html_005a6d3bb544b6f23a14bbd18fcf815e);
+            
+        
+
+        marker_46ba5c5bfe7f9c99fac3c5f55692fffb.bindPopup(popup_42b46b9dbb72a76aa0e39464417bca53)
+        ;
+
+        
+    
+    
+            var marker_8a364fd1635bee309e54685f6cba4876 = L.marker(
+                [41.7777813294382, 39.616937393122186],
+                {
+}
+            ).addTo(marker_cluster_e6044d43d9b024d11ead14416a9bd72c);
+        
+    
+            var icon_abff637c312e0ac6d0d410be2b8c311b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8a364fd1635bee309e54685f6cba4876.setIcon(icon_abff637c312e0ac6d0d410be2b8c311b);
+        
+    
+        var popup_cf460af9c1cc8a03d937a18e8da38c32 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d29b727cf869c44f010b3d31fe06146 = $(`<div id="html_0d29b727cf869c44f010b3d31fe06146" style="width: 100.0%; height: 100.0%;"><strong>Rick's Memories</strong><br>Type: Memory<br>Dimension: <br>Characters: Punk Rick, Bald Rick, Beth Sanchez, Diane Sanchez, Young Memory Rick, Party Rick, Scar Rick, Quantum Rick, Zeta Alpha Rick, Maximums Rickimus, Ricktiminus Sancheziminius</div>`)[0];
+                popup_cf460af9c1cc8a03d937a18e8da38c32.setContent(html_0d29b727cf869c44f010b3d31fe06146);
+            
+        
+
+        marker_8a364fd1635bee309e54685f6cba4876.bindPopup(popup_cf460af9c1cc8a03d937a18e8da38c32)
+        ;
+
+        
+    
+    
+            marker_cluster_e6044d43d9b024d11ead14416a9bd72c.addTo(map_a63f84e30c13654fe917cabfec3f1728);
+        
+</script>
+</html>
