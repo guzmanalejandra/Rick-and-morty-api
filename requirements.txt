@@ -1,0 +1,9 @@
+streamlit
+folium
+requests
+pandas
+plotly
+matplotlib
+textblob
+vaderSentiment
+scikit-learn
